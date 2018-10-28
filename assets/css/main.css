@@ -21416,7 +21416,7 @@ header .widget-control-header .dropdown-menu {
   color: #97ae76;
 }
 
-.blog-v .post .desc h3.title-about {
+.blog-v .post .desc h3.title-default {
   font-size: 35px;
   color: #333;
   display: block;
@@ -21424,7 +21424,7 @@ header .widget-control-header .dropdown-menu {
   margin-bottom: 56px;
 }
 
-.blog-v .post .desc h3.title-about:before {
+.blog-v .post .desc h3.title-default:before {
   content: '';
   height: 2px;
   width: 70px;
@@ -21528,6 +21528,18 @@ header .widget-control-header .dropdown-menu {
   }
 }
 
+.content-section .post.orientation-right .desc {
+  text-align: right;
+}
+.content-section .post.orientation-right .desc h3.title-default:before {
+  left: auto;
+  right: 0;
+}
+
+.content-section .post.orientation-left {
+
+}
+
 .blog-v.reverse [class^=col-]:nth-of-type(even) .post {
   -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
@@ -21537,7 +21549,7 @@ header .widget-control-header .dropdown-menu {
   text-align: right;
 }
 
-.blog-v.reverse [class^=col-]:nth-of-type(even) .post h3.title-about:before {
+.blog-v.reverse [class^=col-]:nth-of-type(even) .post h3.title-default:before {
   left: auto;
   right: 0;
 }
@@ -22380,19 +22392,19 @@ form.cart .btn-wishlist {
   clear: both;
 }
 
-.about .sub-header {
+.default .sub-header {
   margin-bottom: 60px;
 }
 
-.about .blog-v {
+.default .blog-v {
   margin-bottom: 100px;
 }
 
-.about .counter-wrapper {
+.default .counter-wrapper.pad-bottom {
   margin-bottom: 40px;
 }
 
-.about .team-wrapper {
+.default .team-wrapper {
   margin-bottom: 80px;
 }
 

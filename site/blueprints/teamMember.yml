@@ -1,0 +1,22 @@
+title: Team Member
+
+pages: false
+
+preview: false
+
+fields: 
+  title:
+    label: Name of Team Member
+    type: text
+    required: true
+
+  memberTitle:
+    label: Team member's Title
+    type: text
+    required: true
+
+  memberImage:
+    label: Image
+    type: image
+    help: Select an image of the team member
+    required: true
