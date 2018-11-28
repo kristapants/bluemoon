@@ -11,15 +11,17 @@
               <ul>
                 <li>
                   <span class="lnr lnr-map-marker icon"></span>
-                  <span>379 5th Ave New York, NYC 10018</span>
+                  <span><?php
+                      echo html::decode($site->address()->kirbytext())
+                    ?></span>
                 </li>
                 <li>
                   <span class="lnr lnr-phone-handset icon"></span>
-                  <a href="tel:0123456789">(+1) 96 716 6879</a>
+                  <?= html::a("tel:" . $site->phone(), $site->phone()) ?>
                 </li>
                 <li>
                   <span class="lnr lnr-envelope icon"></span>
-                  <a href="mailto: contact@site.com">contact@site.com </a>
+                  <?= html::email($site->email()) ?>
                 </li>
               </ul>
             </div>

@@ -5,14 +5,25 @@ fields:
     label: Title
     type:  text
 
-  author:
-    label: Author
-    type:  text
-
   description:
     label: Description
     type:  textarea
     
+  address:
+    label: Address
+    type: text
+
+  phone:
+    label: Phone Number
+    type: tel
+    width: 1/2
+
+  email:
+    label: E-mail Address
+    type: email
+    width: 1/2
+
   copyright:
     label: Copyright
     type:  textarea
+

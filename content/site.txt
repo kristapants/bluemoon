@@ -1,13 +1,25 @@
-Title: Kirby Starterkit
+Title: Blue Moon CSA Testing
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Knabs and Knods
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: Testing for Blue Moon CSA site
 
 ----
 
-Copyright: © 2009–(date: Year) (link: http://getkirby.com text: The Kirby Team)
+Copyright: Copyright © 2011 Blue Moon Community Farm LLC
+
+----
+
+Address: 3856 Schneider Drive Stoughton, WI 53589
+
+----
+
+Phone: (608) 446-6962
+
+----
+
+Email: kristen@bluemooncommunityfarm.com
