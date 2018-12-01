@@ -1,4 +1,4 @@
-Title: About
+Title: Atbout
 
 ----
 
@@ -87,3 +87,25 @@ Statbarbackgroundimage: 010.jpg
 ----
 
 Teamheading: Our Team
+
+----
+
+Team: 
+
+- 
+  name: Billy Ray
+  title: Farm Leader
+  image: image.png
+- 
+  name: Laura Dern
+  title: "Ramblin' Rose"
+  image: smile.jpg
+- 
+  name: Krorst Yarnarmor
+  title: "Town Smelt'"
+  image: worry.jpg
+- 
+  name: Knod Branabee
+  title: A fine lad
+  image: >
+    41770538_328595391032316_9133265989511675904_n.jpg
