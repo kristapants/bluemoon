@@ -23,3 +23,32 @@ Phone: (608) 446-6962
 ----
 
 Email: krista.verleger@gmail.com
+
+----
+
+Facebook: http://www.facebook.com/Blue-Moon-Community-Farm-166813480030505/
+
+----
+
+Instagram: http://www.instagram.com/bluemooncommunityfarm/
+
+----
+
+Calloutimages: 
+
+- 
+  image: callout-1.jpg
+- 
+  image: callout-2.jpg
+- 
+  image: callout-3.jpg
+- 
+  image: callout-4.jpg
+
+----
+
+Logo: bmlogo.png
+
+----
+
+Footerlogo: bmlogo.png

@@ -1,27 +1,67 @@
   </div>
+
+  <?php if( ! $page->isHomePage() ): ?>
+    <div class="call-to-action-style-2">
+      <?php
+        $calloutImages = $site->calloutImages()->toStructure();
+        if ( count( $calloutImages ) > 0 ) :
+      ?>
+        <div class="wrapper-carousel-background">
+          <?php 
+          foreach ( $calloutImages as $calloutImage ) : 
+            $image = $site->image( $calloutImage->image() )->url();
+            printf( '<img src="%s"/>', $image );
+          endforeach;
+          ?>
+        </div>
+      <?php endif; ?>
+      <div class="overlay-call-to-action"></div>
+      <?php 
+        $facebook = $site->facebook();
+        $instagram = $site->instagram();
+      ?>
+      <?php if ($facebook != '') : ?>
+      <a class="btn btn-brand pill icon-left" href="<?= $facebook ?>">
+        <i class="fa fa-facebook"></i>FOLLOW US</a>
+      <?php endif; ?>
+      <?php if ($instagram != '') : ?>
+      <a class="btn btn-brand pill icon-left" href="<?= $instagram?>">
+        <i class="fa fa-instagram"></i>FOLLOW US</a>
+      <?php endif; ?>
+    </div>
+  <?php endif; ?>
+
   <footer class="footer-style-1">
     <div class="container">
       <div class="row">
         <div class="footer-style-1-inner">
+          <?php 
+            // get footer logo but fall back to default
+            $footerLogo = '/assets/images/BMLogo.png'; 
+            $footerLogoSetting = $site->footerLogo();
+            if ( $footerLogoSetting != '' ) {
+              $footerLogo = $site->image( $footerLogoSetting )->url();
+            }
+          ?>
           <div class="widget-footer widget-text col-first col-small">
             <a href="<?= url() ?>" rel="home">
-              <img class="logo-footer" src="/assets/images/BMLogo.png" alt="Logo Orchid" />
+              <img class="logo-footer" src="<?= $footerLogo ?>" alt="Logo Orchid" />
             </a>
             <div class="widget-link">
               <ul>
                 <li>
                   <span class="lnr lnr-map-marker icon"></span>
                   <span><?php
-                      echo html::decode($site->address()->kirbytext())
+                      echo html::decode( $site->address()->kirbytext() )
                     ?></span>
                 </li>
                 <li>
                   <span class="lnr lnr-phone-handset icon"></span>
-                  <?= html::a("tel:" . $site->phone(), $site->phone()) ?>
+                  <?= html::a( "tel:" . $site->phone(), $site->phone() ) ?>
                 </li>
                 <li>
                   <span class="lnr lnr-envelope icon"></span>
-                  <?= html::email($site->email()) ?>
+                  <?= html::email( $site->email() ) ?>
                 </li>
               </ul>
             </div>

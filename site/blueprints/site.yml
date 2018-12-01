@@ -1,6 +1,11 @@
 title: Site
 
 fields:
+
+  headlineMeta:
+    label: Meta Info Settings
+    type: headline
+
   title:
     label: Title
     type:  text
@@ -8,6 +13,10 @@ fields:
   description:
     label: Description
     type:  textarea
+
+  headlineContactInfo:
+    label: Contact Info Settings
+    type: headline
     
   address:
     label: Address
@@ -23,7 +32,40 @@ fields:
     type: email
     width: 1/2
 
+  headlineHeader:
+    label: Header Settings
+    type: headline
+
+  logo:
+    label: Logo
+    type: image
+
+  headlineFooter:
+    label: Footer Settings 
+    type: headline
+
+  footerLogo:
+    label: Footer Logo
+    type: image
+
   copyright:
     label: Copyright
     type:  textarea
 
+  facebook:
+    label: Facebook URL
+    type: url
+
+  instagram:
+    label: Instagram URL
+    type: url
+
+  calloutImages:
+    label: Callout Background Images
+    help: Add background images for the footer callout section
+    type: structure
+    fields:
+      image:
+        label: Image
+        type: image
+        
