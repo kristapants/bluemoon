@@ -16,54 +16,38 @@
   <div id="page">
     <nav id="menu">
       <ul>
-        <li>
-          <a href="<?= url() ?>" rel="home">Home</a>
+        <?php foreach($pages->visible() as $item): ?>
+        <li class="<?= r($item->isOpen(), ' is-active') ?>">
+          <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
         </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
+        <?php endforeach ?>
       </ul>
     </nav>
     <header class="header-style-1 static">
       <div class="container">
         <div class="row">
+          <?php
+            // get header logo but fall back to default
+            $headerLogo = '/assets/images/BMLogo.png'; 
+            $headerLogoSetting = $site->logo();
+            if ( $headerLogoSetting != '' ) {
+              $headerLogo = $site->image( $headerLogoSetting )->url();
+            }
+          ?>
           <div class="header-1-inner">
             <a class="brand-logo animsition-link" href="<?= url() ?>" rel="home">
-              <img class="img-responsive" src="/assets/images/BMLogo.png" alt="" />
+              <img class="img-responsive" src="<?= $headerLogo; ?>" alt="" />
             </a>
             <nav>
               <ul class="menu hidden-xs">
-                <li>
-                  <a href="<?= url() ?>" rel="home">Home</a>
+                <?php foreach($pages->visible() as $item): ?>
+                <li class="<?= r($item->isOpen(), ' is-active') ?>">
+                  <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
                 </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
+                <?php endforeach ?>
               </ul>
             </nav>
             <aside class="right">
-              <div class="widget widget-control-header widget-search-header">
-                <a class="control btn-open-search-form js-open-search-form-header" href="#">
-                  <span class="lnr lnr-magnifier"></span>
-                </a>
-                <div class="form-outer">
-                  <button class="btn-close-form-search-header js-close-search-form-header">
-                    <span class="lnr lnr-cross"></span>
-                  </button>
-                  <form>
-                    <input placeholder="Search" />
-                    <button class="search">
-                      <span class="lnr lnr-magnifier"></span>
-                    </button>
-                  </form>
-                </div>
-              </div>
               <div class="widget widget-control-header hidden-lg hidden-md hidden-sm">
                 <a class="navbar-toggle js-offcanvas-has-events" type="button" href="#menu">
                   <span class="icon-bar"></span>
