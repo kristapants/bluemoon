@@ -22440,3 +22440,19 @@ form.cart .btn-wishlist {
   max-width: 500px;
   margin: 0 auto 70px auto;
 } 
+.call-to-action-style-2.social-callout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-to-action-style-2.social-callout .btn {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.call-to-action-style-2.social-callout .btn + .btn {
+  margin-left: 15px;
+}

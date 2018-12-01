@@ -9,6 +9,8 @@
 <?php snippet('header') ?>
 
   <div class="contact">
+    
+    <?php snippet('subheader'); ?>
         
     <section class="boxed-sm">
       
