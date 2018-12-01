@@ -1,12 +1,21 @@
 title: Contact
 
-pages: false
-
 fields:
   title:
     label: Title
-    type:  text
+    type: text
+    required: true
 
-  text:
+  subtitle:
+    label: Subtitle
+    type: text
+    help: Customize the site's subtitle. Leave blank to use page title.
+
+  headerImage:
+    label: Header Image
+    type: image
+    help: Select an image to customize the background of the header section. 
+
+  content:
     label: Text
     type:  textarea

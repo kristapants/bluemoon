@@ -44,7 +44,13 @@
       </div>
 
       <p>
-           
+      <div class="container">
+          <div class="page-404-wrapper">
+            <hr class="style-one">
+            <h2>We are sorry but the page you are looking for does not exist. Please try searching again or click on the button below to continue exploring website.</h2>
+          </div>
+      </div>
+      
       <div class="container">
         <div class="row form-contact">
           <div class="row main">

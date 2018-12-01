@@ -22413,3 +22413,30 @@ form.cart .btn-wishlist {
 	top: -9999px;
 	left: -9999px;
 }
+
+.contact .seccontact-wrapper {
+  background-color: whitesmoke;
+}
+
+.contact .contact-wrapper {
+  text-align: center;
+  padding-top: 110px;
+}
+
+.contact h3 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+.contact hr.style-one {
+  max-width: 500px;
+  margin: 0 auto 55px auto;
+}
+ 
+.contact h2 {
+  margin-bottom: 80px;
+  max-width: 500px;
+  margin: 0 auto 70px auto;
+} 
