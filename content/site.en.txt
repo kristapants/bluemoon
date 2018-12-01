@@ -6,7 +6,7 @@ Author: Knabs and Knods
 
 ----
 
-Description: Testing for Blue Moon CSA site
+Description: Testing for Blue Moon CSA
 
 ----
 
@@ -22,4 +22,4 @@ Phone: (608) 446-6962
 
 ----
 
-Email: kristen@bluemooncommunityfarm.com
+Email: krista.verleger@gmail.com

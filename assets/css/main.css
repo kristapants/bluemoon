@@ -22408,4 +22408,8 @@ form.cart .btn-wishlist {
   margin-bottom: 80px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.sendform__potty {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
