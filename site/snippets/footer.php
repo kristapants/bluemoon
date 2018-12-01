@@ -1,35 +1,6 @@
   </div>
 
-  <?php if( ! $page->isHomePage() ): ?>
-    <div class="call-to-action-style-2">
-      <?php
-        $calloutImages = $site->calloutImages()->toStructure();
-        if ( count( $calloutImages ) > 0 ) :
-      ?>
-        <div class="wrapper-carousel-background">
-          <?php 
-          foreach ( $calloutImages as $calloutImage ) : 
-            $image = $site->image( $calloutImage->image() )->url();
-            printf( '<img src="%s"/>', $image );
-          endforeach;
-          ?>
-        </div>
-      <?php endif; ?>
-      <div class="overlay-call-to-action"></div>
-      <?php 
-        $facebook = $site->facebook();
-        $instagram = $site->instagram();
-      ?>
-      <?php if ($facebook != '') : ?>
-      <a class="btn btn-brand pill icon-left" href="<?= $facebook ?>">
-        <i class="fa fa-facebook"></i>FOLLOW US</a>
-      <?php endif; ?>
-      <?php if ($instagram != '') : ?>
-      <a class="btn btn-brand pill icon-left" href="<?= $instagram?>">
-        <i class="fa fa-instagram"></i>FOLLOW US</a>
-      <?php endif; ?>
-    </div>
-  <?php endif; ?>
+  <?php snippet('social-callout') ?>
 
   <footer class="footer-style-1">
     <div class="container">
@@ -43,7 +14,7 @@
               $footerLogo = $site->image( $footerLogoSetting )->url();
             }
           ?>
-          <div class="widget-footer widget-text col-first col-small">
+          <div class="widget-footer widget-text col-first col-medium">
             <a href="<?= url() ?>" rel="home">
               <img class="logo-footer" src="<?= $footerLogo ?>" alt="Logo Orchid" />
             </a>
@@ -66,7 +37,7 @@
               </ul>
             </div>
           </div>
-          <div class="widget-footer widget-link col-second col-medium">
+          <div class="widget-footer widget-link col-second col-small">
             <div class="list-link">
               <h4 class="h4 heading">SHOP</h4>
               <ul>

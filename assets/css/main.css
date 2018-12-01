@@ -22413,3 +22413,20 @@ form.cart .btn-wishlist {
 	top: -9999px;
 	left: -9999px;
 }
+
+.call-to-action-style-2.social-callout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-to-action-style-2.social-callout .btn {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.call-to-action-style-2.social-callout .btn + .btn {
+  margin-left: 15px;
+}
