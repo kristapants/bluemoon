@@ -171,7 +171,7 @@
               
               <?php 
                 foreach ( $teamMembers as $teamMember ) : 
-                  $memberName = $teamMember->title();
+                  $memberName = $teamMember->name();
                   $thumb = $page->image($teamMember->image())->crop(300, 300)->url();
               ?>
               <div class="item">
@@ -181,7 +181,7 @@
                   </div>
                   <figcaption class="desc text-center">
                     <h4 class="name"><?= $memberName ?></h4>
-                    <span class="position"><?= $teamMember->memberTitle() ?></span>
+                    <span class="position"><?= $teamMember->title() ?></span>
                   </figcaption>
                 </figure>
               </div>

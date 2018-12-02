@@ -64,8 +64,32 @@ fields:
     label: Callout Background Images
     help: Add background images for the footer callout section
     type: structure
+    style: table
     fields:
       image:
         label: Image
         type: image
-        
+        required: true
+  
+  awardAssociationImages:
+    label: Award & Association Images
+    type: structure
+    style: table
+    fields:
+      image:
+        label: Image
+        type: image
+        required: true
+
+      title:
+        label: Title
+        type: text
+
+      url:
+        label: URL
+        type: url
+
+      hideInMobile:
+        label: Hide In Moble
+        type: toggle
+        default: false
