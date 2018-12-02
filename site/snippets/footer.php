@@ -39,7 +39,7 @@
           </div>
           <div class="widget-footer widget-link col-second col-small">
             <div class="list-link">
-              <h4 class="h4 heading">SITEMAP</h4>
+              <h4 class="h4 heading">Sitemap</h4>
               <ul>
                 <?php foreach($pages->visible() as $item): ?>
                 <li>
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="widget-footer widget-newsletter-footer col-last col-small">
-            <h4 class="h4 heading">NEWSLETTER</h4>
+            <h4 class="h4 heading">Newsletter</h4>
             <p>Sign up for our mailing list below.</p>
             
             <!-- Begin MailChimp Signup Form -->
@@ -73,6 +73,26 @@
               </form>
             </div>
             <!--End mc_embed_signup-->
+
+            <?php 
+              $facebook = $site->facebook();
+              $instagram = $site->instagram();
+              if ( $facebook !== '' || $instagram !== '' ) : 
+            ?>
+              <h4 class="h4 heading">Follow us</h4>
+              <div class="social-links">
+                <?php if ($facebook != '') : ?>
+                <a id="fb-link" href="<?= $facebook ?>">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <?php endif; ?>
+                <?php if ($instagram != '') : ?>
+                <a id="instagram-link" href="<?= $instagram?>">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <?php endif; ?>
+              </div>
+            <?php endif; ?>
 
           </div>
         </div>

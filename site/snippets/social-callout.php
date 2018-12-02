@@ -1,16 +1,19 @@
 <?php 
-  $showCallout = true;
+  $showCallout = false;
   // if ( $page->isHomePage() ) {
-  //   $showCallout = false;
-  // } else {
-  //   $template = $page->template();
+    //   $showCallout = false;
+    // } else {
+      //   $template = $page->template();
   //   if ( $template == 'contact'
   //     || $template == 'about'
   //   ) {
   //     $showCallout = false;
   //   }
   // }
-  
+  $template = $page->template();
+  if ( $template == 'about' ) {
+    $showCallout = true;
+  }
   if( $showCallout ): 
 ?>
   <div class="call-to-action-style-2 social-callout">

@@ -20659,7 +20659,7 @@ header .widget-control-header .dropdown-menu {
 }
 
 .footer-style-1 .footer-style-1-inner {
-  padding: 55px 0 75px 0;
+  padding: 55px 0 34px 0;
   display: inline-block;
   width: 100%;
 }
@@ -20687,11 +20687,35 @@ header .widget-control-header .dropdown-menu {
 .footer-style-1 .widget-newsletter-footer form {
   margin-top: 29px;
 }
+@media (min-width: 992px) {
+  .footer-style-1 .widget-newsletter-footer form {
+    margin-bottom: 29px;
+  }
+}
 
 .footer-style-2, .footer-style-3, .footer-style-4 {
   color: #666666;
   background-color: #edf2f5;
   line-height: 24px;
+}
+.social-links a + a i {
+  margin-left: 15px;
+}
+.social-links i {
+  color: #666666;
+  font-size: 20px;
+}
+.social-links {
+  
+}
+@media (max-width: 991px) {
+  .social-links {
+    padding: 6px 0 0 0;
+  }
+}
+
+.widget-footer .heading {
+  text-transform: uppercase;
 }
 
 .footer-style-2 .footer-style-2-inner, .footer-style-3 .footer-style-2-inner, .footer-style-4 .footer-style-2-inner {
