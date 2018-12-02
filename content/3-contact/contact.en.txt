@@ -3,3 +3,23 @@ Title: Contact
 ----
 
 Text: yaY i did it
+
+----
+
+Subtitle: Where to Find Us
+
+----
+
+Headerimage: contact-banner.jpg
+
+----
+
+Content: We'd love to chat about any questions you may have. Shoot us an email for more information.
+
+----
+
+Contactblurb: 
+
+----
+
+Contacthelp: We'd love to chat about any questions you may have. Shoot us an email for more information.

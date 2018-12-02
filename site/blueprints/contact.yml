@@ -16,6 +16,7 @@ fields:
     type: image
     help: Select an image to customize the background of the header section. 
 
-  content:
-    label: Text
+  contacthelp:
+    label: Contact Help Text
     type:  textarea
+    help: This is the paragraph above the contact form. 
