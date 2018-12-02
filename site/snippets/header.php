@@ -36,7 +36,7 @@
           ?>
           <div class="header-1-inner">
             <a class="brand-logo animsition-link" href="<?= url() ?>" rel="home">
-              <img class="img-responsive" src="<?= $headerLogo; ?>" alt="" />
+              <img id="logo-img" class="img-responsive" src="<?= $headerLogo; ?>" alt="" />
             </a>
             <nav>
               <ul class="menu hidden-xs">

@@ -23,14 +23,14 @@
                 <li>
                   <span class="lnr lnr-map-marker icon"></span>
                   <span><?php
-                      echo html::decode( $site->address()->kirbytext() )
-                    ?></span>
+                    echo html::decode( $site->address()->kirbytext() )
+                  ?></span>
                 </li>
                 <li>
                   <span class="lnr lnr-phone-handset icon"></span>
                   <?= html::a( "tel:" . $site->phone(), $site->phone() ) ?>
                 </li>
-                <li>
+                <li id="mailLink">
                   <span class="lnr lnr-envelope icon"></span>
                   <?= html::email( $site->email() ) ?>
                 </li>
@@ -94,11 +94,15 @@
                     $image = $site->image( $awardImage->image() )->url();
                     $url = $awardImage->url();
                     $title = $awardImage->title();
+                    $hideInMobile = $awardImage->hideInMobile();
+                    $hideInMobile = $hideInMobile == 'true'
+                      ? ' class="hidden-xs-inline"'
+                      : '';
                     $inner = sprintf( '<img src="%s" alt="%s"/>', $image, $title );
                     if ( $url != '' ) {
                       $inner = sprintf( '<a href="%s" title="%s" target="_blank">%s</a>', $url, $title, $inner );
                     }
-                    printf( '<li>%s</li>', $inner );
+                    printf( '<li%s>%s</li>', $hideInMobile, $inner );
                   endforeach;
                   ?>
                 </ul>

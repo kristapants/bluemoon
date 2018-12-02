@@ -22476,7 +22476,13 @@ form.cart .btn-wishlist {
 }
 
 .award-images img {
-  height: 84px;
+  height: 60px;
+}
+
+@media (min-width: 992px) {
+  .award-images img {
+    height: 84px;
+  }
 }
 
 .copy-right.style-1 p.footer-copyright {
@@ -22491,4 +22497,18 @@ form.cart .btn-wishlist {
 
 #mc_embed_signup form.Orchid-form {
   padding: 0
+}
+
+.hidden-xs,
+.hidden-xs-inline {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .hidden-xs {
+    display: block !important;
+  }
+  .hidden-xs-inline {
+    display: inline !important;
+  }
 }

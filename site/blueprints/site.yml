@@ -88,3 +88,8 @@ fields:
       url:
         label: URL
         type: url
+
+      hideInMobile:
+        label: Hide In Moble
+        type: toggle
+        default: false

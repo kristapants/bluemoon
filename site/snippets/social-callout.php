@@ -1,16 +1,17 @@
 <?php 
   $showCallout = true;
-  if ( $page->isHomePage() ) {
-    $showCallout = false;
-  } else {
-    $template = $page->template();
-    if ( $template == 'contact'
-      || $template == 'about'
-    ) {
-      $showCallout = false;
-    }
-  }
-if( $showCallout ): 
+  // if ( $page->isHomePage() ) {
+  //   $showCallout = false;
+  // } else {
+  //   $template = $page->template();
+  //   if ( $template == 'contact'
+  //     || $template == 'about'
+  //   ) {
+  //     $showCallout = false;
+  //   }
+  // }
+  
+  if( $showCallout ): 
 ?>
   <div class="call-to-action-style-2 social-callout">
     <?php
@@ -32,11 +33,11 @@ if( $showCallout ):
       $instagram = $site->instagram();
     ?>
     <?php if ($facebook != '') : ?>
-    <a class="btn btn-brand pill icon-left" href="<?= $facebook ?>">
-      <i class="fa fa-facebook"></i>FOLLOW US</a>
+    <a id="fb-link" class="btn btn-brand pill icon-left" href="<?= $facebook ?>">
+      <i class="fa fa-facebook"></i>LIKE US</a>
     <?php endif; ?>
     <?php if ($instagram != '') : ?>
-    <a class="btn btn-brand pill icon-left" href="<?= $instagram?>">
+    <a id="instagram-link" class="btn btn-brand pill icon-left" href="<?= $instagram?>">
       <i class="fa fa-instagram"></i>FOLLOW US</a>
     <?php endif; ?>
   </div>
