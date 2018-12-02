@@ -17328,7 +17328,8 @@ body.modal-open .mm-slideout {
   transition: all 0.3s ease-in-out;
 }
 
-.menu li:hover > a {
+.menu li:hover > a,
+.menu li.is-active > a {
   color: #97ae76;
 }
 
@@ -17399,18 +17400,21 @@ body.modal-open .mm-slideout {
   width: 100%;
 }
 
+#mc_embed_signup .mc-field-group.form-group,
 .btn-add-on .form-group {
   position: relative;
   width: 100%;
   max-width: 400px;
 }
 
+#mc_embed_signup .mc-field-group.form-group input,
 .btn-add-on .form-group input {
   width: 100%;
   padding-right: 150px;
   padding-left: 35px;
 }
 
+#mc_embed_signup .btn-add-on.circle .btn,
 .btn-add-on .btn {
   position: absolute;
   top: 0;
@@ -17419,6 +17423,7 @@ body.modal-open .mm-slideout {
 }
 
 @media (max-width: 991px) {
+  #mc_embed_signup .btn-add-on.circle .btn,
   .btn-add-on .btn {
     height: 40px;
   }
@@ -17428,11 +17433,12 @@ body.modal-open .mm-slideout {
   padding-right: 50px;
 }
 
+#mc_embed_signup .btn-add-on.circle .btn,
 .btn-add-on.circle .btn {
-  top: 5px;
+  top: 6px;
   right: 5px;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   line-height: 36px;
   padding: 0;
   border-radius: 50%;
@@ -17445,6 +17451,7 @@ body.modal-open .mm-slideout {
 }
 
 @media (max-width: 991px) {
+  #mc_embed_signup .btn-add-on.circle .btn,
   .btn-add-on.circle .btn {
     height: 30px;
     width: 30px;
@@ -17455,12 +17462,17 @@ body.modal-open .mm-slideout {
   }
 }
 
+#mc_embed_signup .btn-add-on.border input,
 .btn-add-on.border .form-group input {
   border: 2px solid #d9d9d9;
   transition: all 0.3s ease-in-out;
+  height: 45px;
 }
 
-.btn-add-on.border .form-group input:hover, .btn-add-on.border .form-group input:focus {
+#mc_embed_signup .btn-add-on.border .form-group input:hover, 
+#mc_embed_signup .btn-add-on.border .form-group input:focus,
+.btn-add-on.border .form-group input:hover, 
+.btn-add-on.border .form-group input:focus {
   border-color: #97ae76;
 }
 
@@ -17541,12 +17553,14 @@ body.modal-open .mm-slideout {
   }
 }
 
-.btn.btn-brand {
+.btn.btn-brand,
+#mc_embed_signup .btn.btn-brand {
   background-color: #97ae76;
   color: #fff;
   border: 2px solid #97ae76;
 }
 
+#mc_embed_signup .btn.btn-brand:hover,
 .btn.btn-brand:hover {
   background-color: #7e975a;
   border-color: #7e975a;
@@ -22455,4 +22469,26 @@ form.cart .btn-wishlist {
 
 .call-to-action-style-2.social-callout .btn + .btn {
   margin-left: 15px;
+}
+
+.award-images {
+  padding-top: 10px;
+}
+
+.award-images img {
+  height: 84px;
+}
+
+.copy-right.style-1 p.footer-copyright {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+}
+
+.copy-right-inner {
+  justify-content: center;
+}
+
+#mc_embed_signup form.Orchid-form {
+  padding: 0
 }

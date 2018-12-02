@@ -16,8 +16,8 @@
   <div id="page">
     <nav id="menu">
       <ul>
-        <?php foreach($pages->visible() as $item): ?>
-        <li class="<?= r($item->isOpen(), ' is-active') ?>">
+        <?php foreach($pages->visible() as $item): $isHome = $item->title()->html() == 'Home'; ?>
+        <li class="<?= r(($item->isOpen() && !$isHome), ' is-active') ?>">
           <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
         </li>
         <?php endforeach ?>
@@ -40,8 +40,8 @@
             </a>
             <nav>
               <ul class="menu hidden-xs">
-                <?php foreach($pages->visible() as $item): ?>
-                <li class="<?= r($item->isOpen(), ' is-active') ?>">
+                <?php foreach($pages->visible() as $item): $isHome = $item->title()->html() == 'Home'; ?>
+                <li class="<?= r(($item->isOpen() && !$isHome), ' is-active') ?>">
                   <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
                 </li>
                 <?php endforeach ?>

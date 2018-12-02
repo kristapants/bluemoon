@@ -39,34 +39,41 @@
           </div>
           <div class="widget-footer widget-link col-second col-small">
             <div class="list-link">
-              <h4 class="h4 heading">SHOP</h4>
+              <h4 class="h4 heading">SITEMAP</h4>
               <ul>
+                <?php foreach($pages->visible() as $item): ?>
                 <li>
-                  <a href="#">Food</a>
+                  <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
                 </li>
-                <li>
-                  <a href="#">Farm</a>
-                </li>
-                <li>
-                  <a href="#">Health</a>
-                </li>
-                <li>
-                  <a href="#">Orchid</a>
-                </li>
+                <?php endforeach ?>
               </ul>
             </div>
           </div>
           <div class="widget-footer widget-newsletter-footer col-last col-small">
             <h4 class="h4 heading">NEWSLETTER</h4>
-            <p>Subscribe now to get daily updates</p>
-            <form class="Orchid-form form-inline btn-add-on circle border">
-              <div class="form-group">
-                <input class="form-control pill transparent" placeholder="Your Email..." type="email" />
-                <button class="btn btn-brand circle" type="submit">
-                  <i class="fa fa-envelope-o"></i>
-                </button>
-              </div>
-            </form>
+            <p>Sign up for our mailing list below.</p>
+            
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+              <form action="https://bluemooncommunityfarm.us4.list-manage.com/subscribe/post?u=daf5c49ef133df9d71ae4da81&amp;id=68526203f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate Orchid-form form-inline btn-add-on circle border" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group form-group">
+                    <input type="email" placeholder="Your Email..." value="" name="EMAIL" class="form-control pill transparent required email" id="mce-EMAIL">
+                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-brand circle">
+                      <i class="fa fa-envelope-o"></i>
+                    </button>
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_daf5c49ef133df9d71ae4da81_68526203f4" tabindex="-1" value=""></div>
+                </div>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
+
           </div>
         </div>
       </div>
@@ -75,36 +82,36 @@
       <div class="container">
         <div class="row">
           <div class="copy-right-inner">
-            <p class="footer-copyright"><?php
-              // Parse Kirbytext to support dynamic year,
-              // but remove all HTML like paragraph tags:
-              echo html::decode($site->copyright()->kirbytext())
-            ?></p>
-            <div class="widget widget-footer widget-footer-creadit-card">
-              <ul class="list-unstyle">
-                <li>
-                  <a href="#">
-                    <img src="/assets/images/icons/creadit-card-01.png" alt="creadit card" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="/assets/images/icons/creadit-card-02.png" alt="creadit card" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="/assets/images/icons/creadit-card-03.png" alt="creadit card" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="/assets/images/icons/creadit-card-04.png" alt="creadit card" />
-                  </a>
-                </li>
-              </ul>
+            
+            <div class="widget widget-footer widget-footer-creadit-card award-images">
+              <?php
+                $awardImages = $site->awardAssociationImages()->toStructure();
+                if ( count( $awardImages ) > 0 ) :
+              ?>
+                <ul class="list-unstyle">
+                  <?php 
+                  foreach ( $awardImages as $awardImage ) : 
+                    $image = $site->image( $awardImage->image() )->url();
+                    $url = $awardImage->url();
+                    $title = $awardImage->title();
+                    $inner = sprintf( '<img src="%s" alt="%s"/>', $image, $title );
+                    if ( $url != '' ) {
+                      $inner = sprintf( '<a href="%s" title="%s" target="_blank">%s</a>', $url, $title, $inner );
+                    }
+                    printf( '<li>%s</li>', $inner );
+                  endforeach;
+                  ?>
+                </ul>
+              <?php endif; ?>
             </div>
+
           </div>
+          <p class="footer-copyright"><?php
+            // Parse Kirbytext to support dynamic year,
+            // but remove all HTML like paragraph tags:
+            echo html::decode($site->copyright()->kirbytext())
+          ?></p>
+            
         </div>
       </div>
     </div>

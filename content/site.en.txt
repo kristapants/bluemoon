@@ -52,3 +52,28 @@ Logo: bmlogo.png
 ----
 
 Footerlogo: bmlogo.png
+
+----
+
+Awardassociationimages: 
+
+- 
+  image: farmers-union.png
+  title: Wisconsin Farmers Union
+  url: https://www.wisconsinfarmersunion.com/
+- 
+  image: edible-madison.png
+  title: Edible Madison
+  url: http://ediblemadison.com/
+- 
+  image: mosa-color.png
+  title: MOSA Organic
+  url: https://mosaorganic.org/
+- 
+  image: fs-csa-brown.png
+  title: Fairshare CSA Coalition
+  url: https://www.csacoalition.org/
+- 
+  image: scoc.png
+  title: Stoughton Chamber of Commerce
+  url: http://www.stoughtonwi.com/
