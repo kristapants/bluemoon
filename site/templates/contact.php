@@ -19,10 +19,10 @@
           <div class="row icon-box-contact-wrapper">
             <div class="row main">
               <div class="col-md-4">
-                <div class="icon-box">
+                <a class="icon-box" href="https://www.google.com/maps/place/Blue+Moon+Community+Farm/@42.9641733,-89.3064728,14z">
                   <i class="fa fa-map-marker"></i>
                   <p><?php echo html::decode($site->address()->kirbytext()) ?></p>
-                </div>
+                </a>
               </div>
               <div class="col-md-4">
                 <a class="icon-box" href="tel:<?= str::encode($site->phone()) ?>">
@@ -38,18 +38,18 @@
           </div>
         </div>
       </div>
-      
+<!--       
       <div class="container">
         <div class="row">
           <div class="map-canvas" id="js-map-canvas"></div>
+          
         </div>
-      </div>
+      </div> -->
 
-      <p>
       <div class="container">
           <div class="page-404-wrapper">
             <hr class="style-one">
-            <h2>We are sorry but the page you are looking for does not exist. Please try searching again or click on the button below to continue exploring website.</h2>
+            <h2><?= $page->contacthelp() ?></h2>
           </div>
       </div>
       
@@ -112,3 +112,6 @@
   </div>
 
 <?php snippet('footer') ?>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP8qRAW6_o-4pvDo57TllV7EYhffQ0vbk&callback=initMap"
+  type="text/javascript"></script>

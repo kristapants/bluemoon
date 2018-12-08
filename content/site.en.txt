@@ -47,11 +47,11 @@ Calloutimages:
 
 ----
 
-Logo: bmlogo.png
+Logo: bmlogotransparent.png
 
 ----
 
-Footerlogo: bmlogo.png
+Footerlogo: bmlogotransparent.png
 
 ----
 

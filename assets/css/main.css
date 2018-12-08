@@ -20672,8 +20672,9 @@ header .widget-control-header .dropdown-menu {
 
 .footer-style-1 .logo-footer {
   margin-bottom: 30px;
-  width: 278px;
+  width: auto;
   max-width: 100%;
+  height: 200px;
 }
 
 .footer-style-1 .widget-link {
@@ -22477,6 +22478,7 @@ form.cart .btn-wishlist {
   margin-bottom: 80px;
   max-width: 500px;
   margin: 0 auto 70px auto;
+  text-align: center
 } 
 .call-to-action-style-2.social-callout {
   display: flex;
