@@ -4,9 +4,62 @@ pages: false
 
 fields:
   title:
-    label: Title
-    type:  text
+    label: Page Title
+    type: text
+    width: 3/4
+  
+  landingTitle:
+    label: Landing Image Title
+    type: text
+    max: 30
 
-  text:
-    label: Text
+  landingBody:
+    label: Landing Image Body
     type:  textarea
+
+  landingButtonText:
+    label: Landing Page Button Label
+    type: text
+    max: 30
+    width: 1/4
+
+  landingButtonLink:
+    label: Button Destination
+    type: URL
+    width: 3/4
+    help: A label and a destination are required for a button to display!
+
+  landingImage:
+    label: Home Page Landing Image
+    help: High resolution for best results.
+    type: image
+
+  line-content-1:
+    type: line
+
+  landingTitle2:
+    label: Second Landing Image Title
+    type: text
+    max: 30
+    
+  landingBody2:
+    label: Second Landing Image Body
+    type:  textarea
+
+  landingButtonText2:
+    label: Second Landing Page Button Label
+    type: text
+    max: 30
+    width: 1/4        
+
+  landingButtonLink2:
+    label: Second Button Destination
+    type: URL
+    width: 3/4
+    help: A label and a destination are required for a button to display!
+
+  landingImage2:
+    label: Second Home Page Landing Image
+    help: High resolution for best results.
+    type: image
+    help: Second image required for second set of information to display. Leave blank for only one slide!

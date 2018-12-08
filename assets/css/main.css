@@ -22538,3 +22538,7 @@ form.cart .btn-wishlist {
     display: inline !important;
   }
 }
+
+.brand-logo .img-responsive {
+  max-height: 100px;
+} 
