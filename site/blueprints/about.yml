@@ -15,151 +15,174 @@ fields:
     label: Header Image
     type: image
     help: Select an image to customize the background of the header section. 
-
-  headlineContentSections:
+  
+  builderContent:
     label: Content Sections
-    type: headline
+    type: builder
+    fieldsets: 
+      bodyText: 
+        label: Body Text
+        snippet: builder/bodyText
+        fields:
+          contentHeading:
+            label: Section Heading
+            type: text
 
-  contentSectionsInfo:
-    type: info
-    label: Managing Content Sections
-    text: >
-      Enter content displayed in rows. Blank fields are not displayed.
-      
-      When including an image, select an orientation (right or left) to manage whether the image is displayed before or after text.     
-
-  contentHeading:
-    label: Section Heading
-    type: text
-    help: Enter a heading for the content section.
-
-  contentText:
-    label: Text
-    type:  textarea
-  
-  contentImage:
-    label: Section Image
-    type: image
-    width: 3/4
-    
-  contentOrientation:
-    label: Image Orientation
-    type: select
-    options:
-      imageLeft: Image to left
-      imageRight: Image to right
-    default: imageLeft
-    width: 1/4
-
-  line-content-1:
-    type: line
-
-  contentHeading2:
-    label: Section Heading
-    type: text
-    help: Enter a heading for the content section.
-
-  contentText2:
-    label: Text
-    type:  textarea
-  
-  contentImage2:
-    label: Section Image
-    type: image
-    width: 3/4
-    
-  contentOrientation2:
-    label: Image Orientation
-    type: select
-    options:
-      imageLeft: Image to left
-      imageRight: Image to right
-    default: imageRight
-    width: 1/4
-  
-  headlineStatBar:
-    label: Stat Bar
-    type: headline
-
-  statBarBackgroundImage:
-    label: Background Image
-    type: image
-    help: Full width background image for stat bar
-
-  statNumberOne:
-    label: Stat Number One
-    type: number
-    width: 1/4
-
-  statTitleOne:
-    label: Stat Title One
-    type: text
-    width: 3/4
-  
-  statNumberTwo:
-    label: Stat Number Two
-    type: number
-    width: 1/4
-
-  statTitleTwo:
-    label: Stat Title Two
-    type: text
-    width: 3/4
-
-  statNumberThree:
-    label: Stat Number Three
-    type: number
-    width: 1/4
-
-  statTitleThree:
-    label: Stat Title Three
-    type: text
-    width: 3/4
-  
-  statNumberFour:
-    label: Stat Number Four
-    type: number
-    width: 1/4
-
-  statTitleFour:
-    label: Stat Title Four
-    type: text
-    width: 3/4
-
-  headlineTeam:
-    label: Team Members
-    type: headline
-  
-  teamHeading:
-    label: Heading for Team Members Section
-    default: Our Team
-    type: text
-
-  teamInfo:
-    type: info
-    label: Managing Team Members
-    text: >
-      Use the "+ Add" button to create new team members in the team members section.
-
-      Drag and drop to change the order.
-
-  team:
-    type: structure
-    label: Team Members
-    style: table
-    fields: 
-      name: 
-        label: Name of Team Member
-        type: text
-        required: true
-
-      title:
-        label: Team member's Title
-        type: text
-        required: true
-
-      image:
-        label: Image
-        type: image
-        help: Select an image of the team member
-        required: true
+          contentText:
+            label: Text Content
+            type:  wysiwyg
+            required: true
+            help: Enter text content for the section
+            buttons:
+              - h3 
+              - bold
+              - italic
+              - anchor
+              - quote
+              - orderedlist 
+              - unorderedlist
+              - removeFormat
+      contentSection:
+        label: Image Content Section
+        snippet: builder/contentSection
+        fields: 
+          contentHeading:
+            label: Section Heading
+            type: text
+            help: Enter a heading for the content section.
+          contentText:
+            label: Text Content
+            type:  wysiwyg
+            required: true
+            help: Enter text content for the section
+            buttons:
+              - h3 
+              - bold
+              - italic
+              - anchor
+              - quote
+              - orderedlist 
+              - unorderedlist
+              - removeFormat
+          contentImage:
+            label: Section Image
+            type: image
+            help: Select an image in the content section
+            required: true
+          contentOrientation:
+            label: Image Orientation
+            type: select
+            options:
+              imageLeft: Image to left
+              imageRight: Image to right
+            default: imageLeft
+            help: Control the orientation of the image & content
+      statsBar: 
+        label: Stats Bar
+        snippet: builder/statsBar 
+        fields:
+          backgroundImage:
+            label: Background Image
+            type: image
+            help: Full width background image for stat bar
+          statNumberOne:
+            label: Stat Number (1)
+            type: number
+            width: 1/4
+          statTitleOne:
+            label: Stat Title (1)
+            type: text
+            width: 3/4
+          statNumberTwo:
+            label: Stat Number (2)
+            type: number
+            width: 1/4
+          statTitleTwo:
+            label: Stat Title (2)
+            type: text
+            width: 3/4
+          statNumberThree:
+            label: Stat Number (3)
+            type: number
+            width: 1/4
+          statTitleThree:
+            label: Stat Title (3)
+            type: text
+            width: 3/4
+          statNumberFour:
+            label: Stat Number (4)
+            type: number
+            width: 1/4
+          statTitleFour:
+            label: Stat Title (4)
+            type: text
+            width: 3/4
+      team: 
+        label: Team Members
+        snippet: builder/team
+        fields:
+          teamHeading:
+            label: Heading for Team Members Section
+            default: Our Team
+            type: text
+          nameOne: 
+            label: Name of team member (1)
+            type: text
+          titleOne:
+            label: Team member's title (1)
+            type: text
+          imageOne:
+            label: Image (1)
+            type: image
+            help: Select an image of the team member
+          nameTwo:
+            label: Name of team member (2)
+            type: text
+          titleTwo:
+            label: Team member's title (2)
+            type: text
+          imageTwo:
+            label: Image (2)
+            type: image
+            help: Select an image of the team member
+          nameThree: 
+            label: Name of team member (3)
+            type: text
+          titleThree:
+            label: Team member's title (3)
+            type: text
+          imageThree:
+            label: Image (3)
+            type: image
+            help: Select an image of the team member
+          nameFour: 
+            label: Name of team member (4)
+            type: text
+          titleFour:
+            label: Team member's title (4)
+            type: text
+          imageFour:
+            label: Image (4)
+            type: image
+            help: Select an image of the team member
+          nameFive: 
+            label: Name of team member (5)
+            type: text
+          titleFive:
+            label: Team member's title (5)
+            type: text
+          imageFive:
+            label: Image (5)
+            type: image
+            help: Select an image of the team member
+      spacer:
+        label: Spacer
+        entry: >
+          Space between sections: {{spacing}} pixels
+        fields:
+          spacing:
+            label: Spacing
+            type: number
+            min: 0
+            max: 150
+            help: Set amount of pixels to add between previous and next section.

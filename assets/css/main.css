@@ -22536,3 +22536,7 @@ form.cart .btn-wishlist {
     display: inline !important;
   }
 }
+
+.default .content-section .blog-v {
+  margin-bottom: 0;
+}
