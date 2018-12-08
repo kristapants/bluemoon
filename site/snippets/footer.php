@@ -146,6 +146,17 @@
     'assets/js/library/jquery.min.js',
     'assets/js/library/bootstrap.min.js',
     'assets/js/function-check-viewport.js',
+    'assets/revolution/js/jquery.themepunch.tools.min.js',
+    'assets/revolution/js/jquery.themepunch.revolution.min.js',
+    'assets/revolution/js/extensions/revolution.extension.carousel.min.js',
+    'assets/revolution/js/extensions/revolution.extension.kenburn.min.js',
+    'assets/revolution/js/extensions/revolution.extension.layeranimation.min.js',
+    'assets/revolution/js/extensions/revolution.extension.migration.min.js',
+    'assets/revolution/js/extensions/revolution.extension.navigation.min.js',
+    'assets/revolution/js/extensions/revolution.extension.parallax.min.js',
+    'assets/revolution/js/extensions/revolution.extension.actions.min.js',
+    'assets/revolution/js/extensions/revolution.extension.slideanims.min.js',
+    'assets/revolution/js/extensions/revolution.extension.video.min.js',
     'assets/js/library/slick.min.js',
     'assets/js/library/select2.full.min.js',
     'assets/js/library/imagesloaded.pkgd.min.js',
@@ -162,6 +173,7 @@
     'assets/js/config-set-bg-blog-thumb.js',
     'assets/js/config-inview-counter-up.js',
     'assets/js/config-carousel.js',
+    'assets/js/config-banner-slider-2.js',
   )) ?>
 </body>
 </html>

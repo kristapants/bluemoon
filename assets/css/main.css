@@ -22539,6 +22539,9 @@ form.cart .btn-wishlist {
   }
 }
 
+.brand-logo .img-responsive {
+  max-height: 100px;
+} 
 .default .content-section .blog-v {
   margin-bottom: 0;
 }
