@@ -29,9 +29,11 @@
           <?php
             // get header logo but fall back to default
             $headerLogo = '/assets/images/BMLogo.png'; 
-            $headerLogoSetting = $site->logo();
-            if ( $headerLogoSetting != '' ) {
-              $headerLogo = $site->image( $headerLogoSetting )->url();
+            $logoImg = $site->logo()->isNotEmpty()
+              ? $site->image( $site->logo() )
+              : false;
+            if ( $logoImg ) {
+              $headerLogo = $logoImg->url();
             }
           ?>
           <div class="header-1-inner">

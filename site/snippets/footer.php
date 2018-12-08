@@ -9,9 +9,11 @@
           <?php 
             // get footer logo but fall back to default
             $footerLogo = '/assets/images/BMLogo.png'; 
-            $footerLogoSetting = $site->footerLogo();
-            if ( $footerLogoSetting != '' ) {
-              $footerLogo = $site->image( $footerLogoSetting )->url();
+            $logoImg = $site->footerLogo()->isNotEmpty()
+            ? $site->image( $site->footerLogo() )
+              : false;
+            if ( $logoImg ) {
+              $footerLogo = $logoImg->url();
             }
           ?>
           <div class="widget-footer widget-text col-first col-medium">
