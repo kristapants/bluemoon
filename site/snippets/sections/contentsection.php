@@ -1,7 +1,11 @@
 <?php
   $orientation = $data->contentOrientation();
   $heading = $data->contentHeading();
-  $image = $page->image($data->contentImage())->url();
+
+  $image = '';
+  if ($data->contentImage()->isNotEmpty()) {
+    $image = $page->image($data->contentImage())->url();
+  }
   $text = $page->contentText()->kirbytext();
 
   // get the orientation class name

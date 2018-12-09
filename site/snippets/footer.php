@@ -10,7 +10,7 @@
             // get footer logo but fall back to default
             $footerLogo = '/assets/images/BMLogo.png'; 
             $logoImg = $site->footerLogo()->isNotEmpty()
-            ? $site->image( $site->footerLogo() )
+              ? $site->image( $site->footerLogo() )
               : false;
             if ( $logoImg ) {
               $footerLogo = $logoImg->url();

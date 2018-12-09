@@ -29,7 +29,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-c::set('debug',true);
+c::set('debug', true);
 
 c::set('languages', array(
 	array(
@@ -40,3 +40,6 @@ c::set('languages', array(
 		'url'     => '/'
 	)
 ));
+
+// relative links
+c::set('panel.stylesheet', 'assets/css/panel.css');

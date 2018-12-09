@@ -1,5 +1,4 @@
 <?php
-  $heading = $data->contentHeading();
   $text = $data->contentText()->kirbytext();
   if ( $text != '') :
 ?> 
@@ -9,9 +8,6 @@
       <div class="col-md-12">
         <div class="post">
           <?php
-            if ($heading != '') {
-              print( '<h3 class="title-default">' . $heading . '</h3>' );
-            }
             echo $text;
           ?>
         </div>

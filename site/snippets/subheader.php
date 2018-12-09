@@ -10,11 +10,11 @@
   <img class="rellax bg-overlay" src="<?= $imageUrl ?>" alt="">
   <?php endif; ?>
   <div class="overlay-call-to-action"></div>
-  <h3 class="heading-style-3"><?php 
+  <h2 class="heading-style-3"><?php 
   $title = $page->subTitle()->html();
   if ( $title == '' ) {
     $title = $page->title()->html();
   }
   echo $title;
-  ?></h3>
+  ?></h2>
 </section>

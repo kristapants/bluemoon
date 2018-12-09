@@ -1,6 +1,10 @@
 title: General Content Page
 
 fields:
+  headerHeadline:
+    label: Header Settings 
+    type: headline
+
   title:
     label: Title
     type: text
@@ -16,6 +20,111 @@ fields:
     type: image
     help: Select an image to customize the background of the header section. 
 
-  content:
-    label: Text
-    type:  textarea
+  contentHeadline:
+    label: Content 
+    type: headline
+
+  builderContent:
+    label: Content Sections
+    type: builder
+    fieldsets: 
+      contentText: 
+        label: Body Text
+        snippet: builder/contentText
+        fields:
+          contentText:
+            label: Text Content
+            type:  wysiwyg
+            required: true
+            help: Enter text content for the section
+            buttons:
+              - h3
+              - h4
+              - h5
+              - bold
+              - italic
+              - anchor
+              - orderedlist 
+              - unorderedlist
+              - removeFormat
+      heading: 
+        label: Heading
+        snippet: builder/heading
+        fields:
+          headingInfo:
+            type: info
+            text: >
+              To emphasizes portion wrap with html tag: ```My Text <em>-- With Emphasis!</em>```
+          contentHeading:
+            label: Heading
+            type: text
+            required: true
+          alignment:
+            label: Alignement
+            type: select
+            default: default
+            options: 
+              default: Default
+              center: Center
+      markdownContent: 
+        label: Markdown Content
+        snippet: builder/markdownText
+        fields:
+          contentInfo:
+            label: Markdown Text
+            type: info
+            text: >
+              Use markdown to create content. See (link: https://getkirby.com/docs/content/text text:Help Page popup: yes)
+
+
+              To center, wrap text in html block: ```<p class="center">My text </p>```
+          contentText:
+            label: Text Content
+            type:  textarea
+            required: true
+            help: Enter text content for the section
+      contentImage:
+        label: Image
+        snippet: builder/contentImage
+        fields:
+          contentImage: 
+            label: Image
+            type: image
+            help: Select an image in the content section
+            required: true
+          alignment:
+            label: Image Alignment
+            type: select
+            options:
+              fullWidth: Image full width
+              imageLeft: Image to left
+              imageRight: Image to right
+            default: imageLeft
+          imageSize:
+            label: Image Size
+            type: select
+            options:
+              medium: Medium
+              large: Large
+              full: Full Size
+            default: medium
+      spacer:
+        label: Spacer
+        entry: >
+          Space between sections: {{spacing}} pixels
+        fields:
+          spacing:
+            label: Spacing
+            type: number
+            min: 0
+            max: 150
+            help: Set amount of pixels to add between previous and next section.
+            default: 100
+      horizontalRule:
+        label: Line
+        entry: >
+          <hr/>
+        fields:
+          fieldsInfo:
+            type: info
+            text: A horizontal rule will be included
