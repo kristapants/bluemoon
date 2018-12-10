@@ -9,7 +9,7 @@
       }
     ?>" />
   <?php endif ?>
-  <? if ($heading = $data->contentHeading()): ?>
+  <?php if ($heading = $data->contentHeading()): ?>
     <h3 class=""><?= $heading ?></h3>
   <?php endif; ?>
   <?= $data->contentText()->kirbytext() ?>

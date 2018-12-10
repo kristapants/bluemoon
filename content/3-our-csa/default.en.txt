@@ -38,11 +38,11 @@ Buildercontent:
 - 
   contenttext: |
     <p class="center">
-    (link: /content/our-csa/2018-csa-brochure.pdf text: Download On-Farm CSA Brochure class: btn btn-brand pill popup: yes)
+    (file: 2018-csa-brochure.pdf text: Download On-Farm CSA Brochure  class: btn btn-brand pill popup: yes)
     </p>
     <p class="center">
-    (link: /content/our-csa/2018-registration-form.pdf text: Download Registration Form class: btn btn-brand pill popup: yes)
-    <p>
+    (file: 2018-csa-registration-form.pdf text: Download Registration Form class: btn btn-brand pill popup: yes)
+    </p>
   _fieldset: markdownContent
 - 
   _fieldset: horizontalRule
@@ -61,9 +61,9 @@ Buildercontent:
 - 
   contenttext: |
     <p class="center">
-    (link: /content/our-csa/2018-bm-market-share.pdf text: Download CSA Market Share Brochure and Registration Form class: btn btn-brand pill popup: yes)
+    (file: 2018-bm-market-share.pdf text: Download CSA Market Share Brochure and Registration Form class: btn btn-brand pill popup: yes)
     </p>
     <p class="center">
-    Curious what vegetables you might see at our market stand? (link: /content/our-csa/2018-bm-market-offerings.pdf text: View Market Offerings by Session!)
+    Curious what vegetables you might see at our market stand? (file: 2018-bm-market-offerings.pdf text: View Market Offerings by Session!)
     <p>
   _fieldset: markdownContent

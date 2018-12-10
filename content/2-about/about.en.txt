@@ -78,13 +78,13 @@ Buildercontent:
   imageone: team-kristen.png
   nametwo: Laura Dern
   titletwo: "Ramblin' Rose"
-  imagetwo: smile.jpg
+  imagetwo: knoedel.jpg
   namethree: Krorst Yarnarmor
   titlethree: "Town Smelt'"
   imagethree: worry.jpg
   namefour: Knod Branabee
   titlefour: A fine lad
-  imagefour: knoedel.jpg
+  imagefour: smile.jpg
   namefive: ""
   titlefive: ""
   imagefive: ""

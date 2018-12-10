@@ -80,6 +80,8 @@ fields:
               To center, wrap text in html block: ```<p class="center">My text </p>```
 
               To create button link use class "btn btn-brand pill" i.e.: "&#40;link: http://www.link.com text: My Link class: btn btn-brand pill&#41;"
+
+              When linking to a pdf file use "&#40;file: myFileName.pdf ...&#41;" instead of "&#40;link ...&#41;"
           contentText:
             label: Text Content
             type:  textarea

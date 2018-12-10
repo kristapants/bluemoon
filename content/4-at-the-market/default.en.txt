@@ -42,6 +42,6 @@ Buildercontent:
 - 
   contenttext: |
     <p class="center">
-    (link: /content/at-the-market/2018-bm-market-share.pdf text: Download Market Share Brochure and Registration Form class: btn btn-brand pill)
+    (file: 2018-bm-market-share.pdf text: Download Market Share Brochure and Registration Form class: btn btn-brand pill)
     </p>
   _fieldset: markdownContent
