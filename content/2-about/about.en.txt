@@ -28,9 +28,6 @@ Buildercontent:
   contentorientation: imageRight
   _fieldset: contentSection
 - 
-  spacing: "100"
-  _fieldset: spacer
-- 
   backgroundimage: 08.jpg
   statnumberone: "142"
   stattitleone: Stat one
@@ -79,3 +76,22 @@ Buildercontent:
   titlefive: ""
   imagefive: ""
   _fieldset: team
+- 
+  contentheading: Extra Content
+  contenttext: |
+    Lorem ipsum **dolor sit amet**, consectetur adipiscing elit. Vivamus sodales ex non *pretium egestas*. Donec ultrices nibh at [eros vestibulum](http://www.google.com), non pharetra quam hendrerit. Fusce rutrum nisl a ex porta sollicitudin. 
+    
+    - Curabitur sed justo leo
+    - Praesent imperdiet semper 
+    - nisi vel maximus. 
+    - ndrerit justo
+    
+    ### Donec nunc mauris
+    
+    <div>Feugiat quis ultricies nec, vulputate a massa. Aliquam ultrices id odio vel efficitur. Aliquam a fermentum risus. Duis dictum arcu non nisi rutrum consectetur. Etiam vitae metus congue, varius tortor sit amet, ultricies ex. In iaculis tortor sapien, eu faucibus quam malesuada quis. </div>> Cras urna ex, interdum id nunc id, facilisis commodo nibh. Nunc est lectus, tristique vitae venenatis id, posuere id elit. Praesent felis ligula, semper sit amet eleifend vitae, congue fringilla tellus. 
+    
+    1. Integer vulputate mollis ligula
+    2. eget congue lacus dictum in
+    3. Cras dolor augue
+    4. bibendum vitae magna sit amet
+  _fieldset: bodyText
