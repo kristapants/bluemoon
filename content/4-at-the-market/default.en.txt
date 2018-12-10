@@ -1,0 +1,47 @@
+Headerheadline: 
+
+----
+
+Title: At the Market
+
+----
+
+Subtitle: 
+
+----
+
+Headerimage: 
+
+----
+
+Contentheadline: 
+
+----
+
+Buildercontent: 
+
+- 
+  contentheading: Westside Community Market
+  alignment: center
+  _fieldset: heading
+- 
+  contenttext: |
+    **UW Digestive Health Center
+    **750 University Row, Madison WI
+    Saturdays 7am-12:30pm
+    
+    <www.westsidecommunitymarket.org> You'll find us at the market from April until November with a diverse array of Certified Organic Vegetables. In April and May, we also offer premium quality Organic Seedlings for your own garden!</www.westsidecommunitymarket.org>
+  _fieldset: contentText
+- 
+  contentheading: Market CSA!
+  alignment: center
+  _fieldset: heading
+- 
+  contenttext: 'We also offer a unique CSA option for our Westside Community Market Customers: **A Market Share! ** Enjoy the benefits of CSA membership without giving up farmers market shopping.'
+  _fieldset: contentText
+- 
+  contenttext: |
+    <p class="center">
+    (link: /content/at-the-market/2018-bm-market-share.pdf text: Download Market Share Brochure and Registration Form class: btn btn-brand pill)
+    </p>
+  _fieldset: markdownContent

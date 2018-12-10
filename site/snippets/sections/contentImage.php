@@ -1,6 +1,7 @@
 <?php
   $alignment = $data->alignment();
   $size = $data->imageSize();
+  $caption = $data->caption();
   $image = '';
   if ($data->contentImage()->isNotEmpty()) {
     $image = $page->image($data->contentImage());
@@ -17,12 +18,27 @@
         break;
     }
   } 
-  if ($image != ''): ?><img src="<?= $image ?>" class="img-responsive <?php
-  if ($alignment == 'fullWidth') {
-    echo '';
-  } else if ($alignment == 'imageLeft') {
-    echo 'pull-left';
-  } else if ($alignment == 'imageRight') {
-    echo 'pull-right';
-  }
-?>"/><?php endif; ?>
+  if ($image != ''): ?>
+    <?php if ($caption != '') : ?><div class="caption-wrapper <?php
+      if ($alignment == 'imageLeft') {
+        echo 'align-left';
+      } else if ($alignment == 'imageRight') {
+        echo 'align-right';
+      }
+    ?>"><?php endif; ?>
+      <img src="<?= $image ?>" class="img-responsive <?php
+        if ($caption == '') {
+          if ($alignment == 'imageLeft') {
+            echo 'pull-left';
+          } else if ($alignment == 'imageRight') {
+            echo 'pull-right';
+          }
+        }
+        ?>"/>
+      <?php 
+      if ($caption != '') { 
+        printf( '<p class="caption">%s</p>', $caption);
+      }
+      ?>
+    <?php if ($caption != '') : ?></div><?php endif; ?>
+  <?php endif; ?>
