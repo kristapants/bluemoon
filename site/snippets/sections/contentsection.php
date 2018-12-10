@@ -6,9 +6,10 @@
   if ($data->contentImage()->isNotEmpty()) {
     $image = $page->image($data->contentImage())->url();
   }
-  $text = $page->contentText()->kirbytext();
+  $text = $data->contentText()->kirbytext();
 
   // get the orientation class name
+  $orientationClass = '';
   if ( $orientation == 'imageLeft' ) {
     $orientationClass = 'orientation-left';
   } else if ( $orientation == 'imageRight' ) {

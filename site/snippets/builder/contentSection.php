@@ -9,8 +9,8 @@
       }
     ?>" />
   <?php endif ?>
-  <h3 class="">
-    <?= $data->contentHeading() ?>
-  </h3>
+  <? if ($heading = $data->contentHeading()): ?>
+    <h3 class=""><?= $heading ?></h3>
+  <?php endif; ?>
   <?= $data->contentText()->kirbytext() ?>
 </section>
