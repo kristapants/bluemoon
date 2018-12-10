@@ -1,25 +1,24 @@
 <?php snippet('header') ?>
-
-  <main class="main" role="main">
     
-    <?php
-      $slideImage1 = false;
-      if ($page->landingImage()->isNotEmpty()) {
-        $slideImage1 = $page->image( $page->landingImage() );
-        if ( $slideImage1 ) {
-          $slideImage1 = $slideImage1->url();
-        }
+  <?php
+    $slideImage1 = false;
+    if ($page->landingImage()->isNotEmpty()) {
+      $slideImage1 = $page->image( $page->landingImage() );
+      if ( $slideImage1 ) {
+        $slideImage1 = $slideImage1->url();
       }
-      $slideImage2 = false;
-      if ($page->landingImage2()->isNotEmpty()) {
-        $slideImage2 = $page->image( $page->landingImage2() );
-        if ( $slideImage2 ) {
-          $slideImage2 = $slideImage2->url();
-        }
+    }
+    $slideImage2 = false;
+    if ($page->landingImage2()->isNotEmpty()) {
+      $slideImage2 = $page->image( $page->landingImage2() );
+      if ( $slideImage2 ) {
+        $slideImage2 = $slideImage2->url();
       }
-    ?>
+    }
+  ?>
 
-    <?php if ($slideImage1 != '' || $slideImage2 != ''): ?>
+  <?php if ($slideImage1 != '' || $slideImage2 != ''): ?>
+  <div>
     <div class="banner-slider-2 rev_slider" id="slider-2">
       <ul>
         <?php if ($slideImage1 != ''): ?>
@@ -44,7 +43,7 @@
         <?php endif; ?>
         <?php if ($slideImage2 != ''): ?>
         <li data-transition="fade">
-          <img src="<?= $slideImage ?>" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+          <img src="<?= $slideImage2 ?>" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
           <div class="tp-caption" data-x="center" data-y="center" data-voffset="['-100','-100','-140','-140']" data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:-80px;opacity:0;s:300;" data-start="1000">
             <h2><?= $page->landingTitle2() ?></h2>
           </div>
@@ -64,18 +63,58 @@
         <?php endif; ?>
       </ul>
     </div>
+  </div>
+  <?php endif; ?>
 
-    <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
-  </main>
+  <section class="boxed-sm">
+    <div class="container">
+      <div class="row">
+        <div class="creative-layout-post-style-1">
+          <div class="post-creative-style-1 right-thumb">
+            <div class="col-sm-6">
+              <div class="desc">
+                <h3>
+                  <a href="blog-detail.html">Add Green In Your Space</a>
+                </h3>
+                <p class="sapo hidden-sm hidden-xs">Sed aliquet, risus vel tincidunt vulputate, nulla purus mollis leo, eget blandit mauris odio at elit. Cras cursus aliquam laoreet. Aenean lacinia ipsum vulputate dolor tincidunt ornare. Donec vel pretium arcu. </p>
+                <a class="btn btn-brand pill"
+                  href="shop.html">SHOP NOW</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="img-wrapper">
+                <a href="blog-detail.html">
+                  <img class="img-responsive" src="images/blog/creative-01.jpg" alt="Image">
+                </a>
+                <h3 class="cate">
+                  <strong>01 </strong>PLANT OUTDOOR</h3>
+              </div>
+            </div>
+          </div>
+          <div class="post-creative-style-1 left-thumb">
+            <div class="col-sm-6">
+              <div class="img-wrapper">
+                <h3 class="cate">
+                  <strong>02 </strong>PLANT INDOOR</h3>
+                <a href="blog-detail.html">
+                  <img class="img-responsive" src="images/blog/creative-02.jpg" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="desc">
+                <h3>
+                  <a href="blog-detail.html">Decorate your house</a>
+                </h3>
+                <p class="sapo hidden-sm hidden-xs">Sed aliquet, risus vel tincidunt vulputate, nulla purus mollis leo, eget blandit mauris odio at elit. Cras cursus aliquam laoreet. Aenean lacinia ipsum vulputate dolor tincidunt ornare. Donec vel pretium arcu. </p>
+                <a class="btn btn-brand pill"
+                  href="shop.html">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <?php snippet('footer') ?>
