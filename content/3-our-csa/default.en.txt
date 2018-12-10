@@ -1,0 +1,69 @@
+Title: Our CSA
+
+----
+
+Subtitle: 
+
+----
+
+Headerimage: 
+
+----
+
+Buildercontent: 
+
+- 
+  contentheading: 'On-farm CSA Program <em>--Sold out for 2018!</em>'
+  alignment: center
+  _fieldset: heading
+- 
+  contentimage: our-csa-1.jpg
+  alignment: imageRight
+  imagesize: full
+  _fieldset: contentImage
+- 
+  contenttext: |
+    This is our most popular and most traditional CSA program. Members visit the farm to collect their shares, and have the opportunity to see the change of seasons and life of the farm firsthand.
+    
+    #### **Program Highlights: **
+    
+    - Weekly and Every-Other-Week Shares
+    - Late Fall Shares to extend the harvest season
+    - Egg Shares through our farm partners at Prairie Bluff Farm in Mt. Horeb, WI
+    - Member access to U-Pick herbs, flowers, and canning vegetables included
+    - Farm Events
+    - Weekly Newsletter with notes from the field, recipes, and storage tips
+    - Options to purchase farm-raised meat: chickens, turkeys, and pork cuts
+  _fieldset: contentText
+- 
+  contenttext: |
+    <p class="center">
+    (link: /content/our-csa/2018-csa-brochure.pdf text: Download On-Farm CSA Brochure class: btn btn-brand pill popup: yes)
+    </p>
+    <p class="center">
+    (link: /content/our-csa/2018-registration-form.pdf text: Download Registration Form class: btn btn-brand pill popup: yes)
+    <p>
+  _fieldset: markdownContent
+- 
+  _fieldset: horizontalRule
+- 
+  contentheading: 'CSA Market Share <em>--Shares Available for 2018!</em>'
+  alignment: center
+  _fieldset: heading
+- 
+  contentimage: our-csa-2.jpg
+  alignment: imageLeft
+  imagesize: full
+  _fieldset: contentImage
+- 
+  contenttext: "Our Market share program offers our customers at the Westside Community Market an opportunity to support the farm at the start of the growing season by paying ahead for their season of market shopping. This is a free-choice share, subject to market availability. Members shop from a prepaid card at the stand, and enjoy other benefits of being a member of the Blue Moon community. *NOTE that our Farmers' Market stand is at the Westside Community Market in Madison, not at the farm. *"
+  _fieldset: contentText
+- 
+  contenttext: |
+    <p class="center">
+    (link: /content/our-csa/2018-bm-market-share.pdf text: Download CSA Market Share Brochure and Registration Form class: btn btn-brand pill popup: yes)
+    </p>
+    <p class="center">
+    Curious what vegetables you might see at our market stand? (link: /content/our-csa/2018-bm-market-offerings.pdf text: View Market Offerings by Session!)
+    <p>
+  _fieldset: markdownContent

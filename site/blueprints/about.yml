@@ -1,6 +1,10 @@
 title: About
 
 fields:
+  headerHeadline:
+    label: Header Settings 
+    type: headline
+
   title:
     label: Title
     type: text
@@ -15,6 +19,10 @@ fields:
     label: Header Image
     type: image
     help: Select an image to customize the background of the header section. 
+
+  contentHeadline:
+    label: Content 
+    type: headline
   
   builderContent:
     label: Content Sections
@@ -27,7 +35,6 @@ fields:
           contentHeading:
             label: Section Heading
             type: text
-
           contentText:
             label: Text Content
             type:  wysiwyg
@@ -38,10 +45,27 @@ fields:
               - bold
               - italic
               - anchor
-              - quote
               - orderedlist 
               - unorderedlist
               - removeFormat
+      markdownContentSection: 
+        label: Markdown Content
+        entry: >
+          {{contenttext}}
+        fields:
+          contentInfo:
+            label: Markdown Text
+            type: info
+            text: >
+              Use markdown to create content. See (link: https://getkirby.com/docs/content/text text:Help Page popup: yes)
+
+
+              To center, wrap text in html block: ```<p class="center">My text </p>```
+          contentText:
+            label: Text Content
+            type:  textarea
+            required: true
+            help: Enter text content for the section
       contentSection:
         label: Image Content Section
         snippet: builder/contentSection
@@ -186,3 +210,4 @@ fields:
             min: 0
             max: 150
             help: Set amount of pixels to add between previous and next section.
+            default: 100

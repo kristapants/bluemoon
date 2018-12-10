@@ -7395,6 +7395,16 @@ button.close {
   float: left !important;
 }
 
+@media (max-width: 767px) {
+  img.pull-right {
+    float: none !important;
+  }
+
+  img.pull-left {
+    float: none !important;
+  }
+}
+
 .hide {
   display: none !important;
 }
@@ -17005,6 +17015,7 @@ h3.heading-style-2:after {
   background-color: #97ae76;
 }
 
+h2.heading-style-3,
 h3.heading-style-3 {
   font-size: 35px;
   padding: 20px 0 12px 0;
@@ -17013,6 +17024,7 @@ h3.heading-style-3 {
   text-align: center;
 }
 
+h2.heading-style-3:before, h2.heading-style-3:after,
 h3.heading-style-3:before, h3.heading-style-3:after {
   content: '';
   width: 100px;
@@ -17024,6 +17036,7 @@ h3.heading-style-3:before, h3.heading-style-3:after {
   margin-left: -50px;
 }
 
+h2.heading-style-3:after 
 h3.heading-style-3:after {
   bottom: -3px;
 }
@@ -22524,6 +22537,12 @@ form.cart .btn-wishlist {
 #mc_embed_signup form.Orchid-form {
   padding: 0
 }
+#mc_embed_signup input#mce-EMAIL {
+  width: 100%;
+}
+#mc_embed_signup input#mce-EMAIL[type="email"]:focus {
+  border-right: 1px solid;
+}
 
 .hidden-xs,
 .hidden-xs-inline {
@@ -22542,6 +22561,68 @@ form.cart .btn-wishlist {
 .brand-logo .img-responsive {
   max-height: 100px;
 } 
-.default .content-section .blog-v {
+.about-page .content-section .blog-v {
   margin-bottom: 0;
+}
+
+.hentry .blog-v .post {
+  margin-top: 15px;
+  display: block;
+}
+
+.hentry .post p {
+  margin-bottom: 30px;
+}
+.hentry .post p.center,
+.hentry .post h3.center,
+.hentry .post h4.center {
+  text-align: center;
+}
+.hentry .post h3.title-default {
+  font-size: 35px;
+  font-weight: normal;
+  padding: 20px 0 10px 0;
+}
+.hentry .post ul,
+.hentry .post ol {
+  margin: 0 0 30px 20px;
+}
+.hentry .post img.pull-left {
+  padding: 0 15px 30px 0;
+}
+.hentry .post img.pull-right {
+  padding: 0 0 30px 15px;;
+}
+.hentry .post h3 em,
+.hentry .post h4 em {
+  color: #97ae76;
+  font-style: normal;
+}
+.line-section > div {
+  padding: 10px 0;
+}
+.hentry .post hr {
+  border-top-color: #e6e6e6;
+}
+
+.hentry .heading-wrapper h3.heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.content-section .post h2,
+.content-section .post h3,
+.content-section .post h4,
+.content-section .post h5,
+.content-section .post h6 {
+  margin-bottom: 15px;
+}
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+.clear-both {
+  clear: both;
 }

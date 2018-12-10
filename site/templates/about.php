@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
   
-  <div class="default">
+  <div class="default about-page">
 
     <?php snippet('subheader'); ?>
 

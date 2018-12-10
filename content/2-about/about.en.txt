@@ -6,168 +6,7 @@ Subtitle: About Us
 
 ----
 
-Text: 
-
-----
-
-Contentheading: Who We Are
-
-----
-
-Contenttext: We are a manufacturing base of Orchid food produced on our farm. We are a family health care production team, created by today's need for clean and safe food, driven by the desire to build meaningful and meaningful experiences. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien. Pellentesque a metus urna. Integer placerat et ante quis pharetra. Nulla facilisi. Donec egestas tortor non ante pulvinar, sit amet sollicitudin nisl auctor. Vestibulum aliquet finibus consectetur. Nullam faucibus vehicula est nec pulvinar.
-
-----
-
-Contentimage: worry.jpg
-
-----
-
-Contentorientation: imageLeft
-
-----
-
-Statnumberone: 
-
-----
-
-Stattitleone: 
-
-----
-
-Statnumbertwo: 
-
-----
-
-Stattitletwo: 
-
-----
-
-Statnumberthree: 
-
-----
-
-Stattitlethree: 
-
-----
-
-Statnumberfour: 
-
-----
-
-Stattitlefour: 
-
-----
-
-Contentheading2: What We Do
-
-----
-
-Contenttext2: 
-
-We provide all kinds of Orchid products. Produced on our farm, the products are always fresh, multi-vitamins, rich variety for your family. With our Orchid food will bring delicious meals to your family.
-
-Vestibulum eu nisl vitae tortor feugiat aliquet finibus in libero. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam pellentesque ullamcorper.
-
-----
-
-Contentimage2: smile.jpg
-
-----
-
-Contentorientation2: imageRight
-
-----
-
 Headerimage: 08.jpg
-
-----
-
-Statbarbackgroundimage: 010.jpg
-
-----
-
-Teamheading: Our Team
-
-----
-
-Team: 
-
-- 
-  name: Billy Ray
-  title: Farm Leader
-  image: image.png
-- 
-  name: Laura Dern
-  title: "Ramblin' Rose"
-  image: smile.jpg
-- 
-  name: Krorst Yarnarmor
-  title: "Town Smelt'"
-  image: worry.jpg
-- 
-  name: Knod Branabee
-  title: A fine lad
-  image: >
-    41770538_328595391032316_9133265989511675904_n.jpg
-
-----
-
-Contentsections: 
-
-- 
-  contentheading: Who We Are
-  contenttext: "    We are a manufacturing base of Orchid food produced on our farm. We are a family health care production team, created by today's need for clean and safe food, driven by the desire to build meaningful and meaningful experiences. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien. Pellentesque a metus urna. Integer placerat et ante quis pharetra. Nulla facilisi. Donec egestas tortor non ante pulvinar, sit amet sollicitudin nisl auctor. Vestibulum aliquet finibus consectetur. Nullam faucibus vehicula est nec pulvinar."
-  contentimage: worry.jpg
-  contentorientation: imageLeft
-- 
-  contentheading: What We Do
-  contenttext: |
-    We provide all kinds of Orchid products. Produced on our farm, the products are always fresh, multi-vitamins, rich variety for your family. With our Orchid food will bring delicious meals to your family.
-    
-    Vestibulum eu nisl vitae tortor feugiat aliquet finibus in libero. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam pellentesque ullamcorper.
-  contentimage: smile.jpg
-  contentorientation: imageRight
-- 
-  contentheading: Extra Content
-  contenttext: |
-    Aliquam a fermentum risus. **Duis dictum** arcu non nisi rutrum consectetur. Etiam vitae metus congue, varius tortor sit amet, ultricies ex. In iaculis tortor sapien, eu faucibus quam malesuada quis. Cras urna ex, interdum id nunc id, facilisis commodo nibh. [Nunc est lectus](http://www.google.com), tristique vitae venenatis id, posuere id elit. Praesent felis ligula, semper sit amet eleifend vitae, congue fringilla tellus. Integer vulputate mollis ligula, eget congue lacus dictum in. 
-    
-    - Cras dolor augue, 
-    - bibendum vitae magna sit amet 
-    - viverra imperdiet odio.
-    
-    ### sdfsd
-    
-    Cras venenatis enim nec magna facilisis sollicitudin. Suspendisse lacus diam, pretium in orci et, condimentum luctus lorem. Vestibulum enim turpis, convallis eu felis vitae, consequat aliquam quam.
-    
-    1. Nam eget 
-    2. ante a nunc 
-    3. suscipit consequat in at eros.
-    
-     In tempor blandit leo hendrerit pharetra. Vivamus lacinia sapien eget maximus pharetra. Vestibulum molestie id erat at vehicula. 
-    
-    > Donec faucibus eu eros a euismod. Phasellus posuere imperdiet sem a ullamcorper. Aenean pulvinar pretium nibh ut laoreet. Nulla commodo ipsum at imperdiet placerat. Vestibulum tempus ligula mi, porttitor pretium erat euismod at. Sed id consequat magna. Donec aliquet, libero in scelerisque convallis, quam diam hendrerit eros, quis lacinia metus odio elementum velit.
-    
-    *- [link here](http://www.link.com)*
-  contentimage: ""
-  contentorientation: imageLeft
-
-----
-
-Stats: 
-
-- 
-  statnumber: "154"
-  stattitle: Happy Clients
-- 
-  statnumber: "234"
-  stattitle: Products in STORESSSS
-- 
-  statnumber: "32"
-  stattitle: Years Underground
-- 
-  statnumber: "126"
-  stattitle: Borks
 
 ----
 
@@ -200,8 +39,24 @@ Buildercontent:
   stattitlefour: Stat 4
   _fieldset: statsBar
 - 
-  spacing: "100"
-  _fieldset: spacer
+  contentheading: Extra Content
+  contenttext: |
+    Lorem ipsum **dolor sit amet**, consectetur adipiscing elit. Vivamus sodales ex non *pretium egestas*. Donec ultrices nibh at [eros vestibulum](http://www.google.com), non pharetra quam hendrerit. Fusce rutrum nisl a ex porta sollicitudin. 
+    
+    - Curabitur sed justo leo
+    - Praesent imperdiet semper 
+    - nisi vel maximus. 
+    - ndrerit justo
+    
+    ### Donec nunc mauris
+    
+    Feugiat quis ultricies nec, vulputate a massa. Aliquam ultrices id odio vel efficitur. Aliquam a fermentum risus. Duis dictum arcu non nisi rutrum consectetur. Etiam vitae metus congue, varius tortor sit amet, ultricies ex. In iaculis tortor sapien, eu faucibus quam malesuada quis.
+    
+    1. Integer vulputate mollis ligula 
+    2. eget congue lacus dictum in 
+    3. Cras dolor augue bibendum 
+    4. vitae magna sit amet
+  _fieldset: bodyText
 - 
   teamheading: Our Team
   nameone: Billy Ray
