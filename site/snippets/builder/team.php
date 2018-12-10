@@ -18,13 +18,13 @@
   </style>
   <?php if ( ! function_exists('display_team_member') ) {
     function display_team_member($name, $title, $img) {
+      if ($img != '') :
       ?><div class="member">
-        <?php if ($img != '') {
-          printf( '<div class="img" style="background-image: url(%s);"></div>', $img );
-        } ?>
+        <?php printf( '<div class="img" style="background-image: url(%s);"></div>', $img ); ?>
         <?= $name != '' ? sprintf ( '<div><strong>%s</strong></div>', $name ) : '' ?>
         <?= $title != '' ? sprintf( '<em>%s</em>', $title ) : '' ?>
       </div><?php
+      endif; 
     }
   } ?>
   <?php
@@ -48,7 +48,7 @@
     display_team_member($name, $title, $img);
     $name = $data->nameFour();
     $title = $data->titleFour();
-    $img = $data->imageFour()->isNotEmpty()
+    $img = ($data->imageFour()->isNotEmpty() && $page->image($data->imageFour()) != '')
       ? $page->image($data->imageFour())->url()
       : '';
     display_team_member($name, $title, $img);

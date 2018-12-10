@@ -78,6 +78,8 @@ fields:
 
 
               To center, wrap text in html block: ```<p class="center">My text </p>```
+
+              To create button link use class "btn btn-brand pill" i.e.: ```(link: http://www.link.com text: My Link class: btn btn-brand pill)```
           contentText:
             label: Text Content
             type:  textarea

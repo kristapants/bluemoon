@@ -13,22 +13,44 @@ Headerimage: 08.jpg
 Buildercontent: 
 
 - 
-  contentheading: Who We Are
-  contenttext: "We are a manufacturing base of Orchid food produced on our farm. We are a family health care production team, created by today's need for clean and safe food, driven by the desire to build meaningful and meaningful experiences. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien. Pellentesque a metus urna. Integer placerat et ante quis pharetra. Nulla facilisi. Donec egestas tortor non ante pulvinar, sit amet sollicitudin nisl auctor. Vestibulum aliquet finibus consectetur. Nullam faucibus vehicula est nec pulvinar."
-  contentimage: worry.jpg
+  contentheading: About Kristen
+  contenttext: "I'm Kristen, the owner and primary manager at Blue Moon. I began my career in the Hudson River Valley of New York as an apprentice at Roxbury Farm CSA. This immersion experience of tending 40 different crops on over 30 acres with the guidance of gifted farmers got me hooked on growing vegetables and the CSA model itself. After working for CSA farms for 4 years in New York and Wisconsin, I started Blue Moon Community Farm in 2004 on a piece of rented land south of Madison. "
+  contentimage: kristen-family.jpg
   contentorientation: imageLeft
   _fieldset: contentSection
 - 
-  contentheading: What We Do
-  contenttext: |
-    We provide all kinds of Orchid products. Produced on our farm, the products are always fresh, multi-vitamins, rich variety for your family. With our Orchid food will bring delicious meals to your family.
-    
-    Vestibulum eu nisl vitae tortor feugiat aliquet finibus in libero. Vivamus et enim accumsan, tempus dui non, pretium libero. Vivamus vitae justo non metus malesuada finibus. Pellentesque vehicula porttitor eleifend. Proin eget velit in arcu consectetur tempor. Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam pellentesque ullamcorper.
-  contentimage: smile.jpg
+  contentheading: About Blue Moon
+  contenttext: >
+    Over 10 years have passed, and Blue Moon
+    has grown from a 1 acre plot to over 6
+    acres of intensive production. We serve
+    an on-farm CSA program, a stand at the
+    Westside Community Market in Madison,
+    and several area chefs. In 2008, I
+    purchased our current farm and moved
+    Blue Moon to its current, permanent
+    location in the beautiful Town of Dunn.
+    I still love what I do, and feel that
+    our small acreage gives us the
+    opportunity hone our skills, know our
+    customers, and be good stewards to our
+    land. I live on the farm with my
+    husband, who does freelance ecological
+    consulting from a home office, and our
+    son Cyrus, born May of 2013. A
+    diversified vegetable farm, even a small
+    one, cannot be run well without the work
+    of many hands, and I am joined each year
+    by a crew of assistant managers, field
+    employees and worker shares.
+  contentimage: blue-moon.jpg
   contentorientation: imageRight
   _fieldset: contentSection
 - 
-  backgroundimage: 08.jpg
+  spacing: "100"
+  _fieldset: spacer
+- 
+  backgroundimage: 010.jpg
   statnumberone: "142"
   stattitleone: Stat one
   statnumbertwo: "12"
@@ -39,29 +61,21 @@ Buildercontent:
   stattitlefour: Stat 4
   _fieldset: statsBar
 - 
-  contentheading: Extra Content
+  contentheading: Blue Moon in the News
   contenttext: |
-    Lorem ipsum **dolor sit amet**, consectetur adipiscing elit. Vivamus sodales ex non *pretium egestas*. Donec ultrices nibh at [eros vestibulum](http://www.google.com), non pharetra quam hendrerit. Fusce rutrum nisl a ex porta sollicitudin. 
-    
-    - Curabitur sed justo leo
-    - Praesent imperdiet semper 
-    - nisi vel maximus. 
-    - ndrerit justo
-    
-    ### Donec nunc mauris
-    
-    Feugiat quis ultricies nec, vulputate a massa. Aliquam ultrices id odio vel efficitur. Aliquam a fermentum risus. Duis dictum arcu non nisi rutrum consectetur. Etiam vitae metus congue, varius tortor sit amet, ultricies ex. In iaculis tortor sapien, eu faucibus quam malesuada quis.
-    
-    1. Integer vulputate mollis ligula 
-    2. eget congue lacus dictum in 
-    3. Cras dolor augue bibendum 
-    4. vitae magna sit amet
+    - Voted Favorite CSA in [Mad Favs](https://isthmus.com/annual-manual/isthmus-readers-pick-their-madison-favorites-2017/) 2017 (Isthmus)
+    - ["Cultivating Connection at Blue Moon Community Farm" ](http://ediblemadison.com/articles/view/blue-moon-community-farm) Edible Madison, Summer 2016
+    - Blue Moon on the [Farmer-to-Farmer Podcast](http://www.farmertofarmerpodcast.com/episodes/kordet) with Chris Blanchard, Summer 2016
+    - WORT-FM's [5 Minutes on the Farm Podcast](http://www.wortfm.org/tag/blue-moon-community-farm/) with Julie Garrett, Summer 2016
+    - Blue Moon Hosts [Outstanding in the Field dinner](http://hamelfamilywines.com/2015/08/10/outstanding-in-the-field-stoughton-wi/), Summer 2015
+    - Blue Moon wins [Edible Madison's 2015 Local Hero Award](http://ediblemadison.com/articles/view/2015-local-hero-awards/c/full/)!
+    - [A Q & A with Kristen Kordet](http://www.channel3000.com/madison-magazine/city-life/a-qa-with-kristen-kordet/162538567), Madison Magazine April 2014
   _fieldset: bodyText
 - 
   teamheading: Our Team
-  nameone: Billy Ray
+  nameone: Kristen
   titleone: Farm Leader
-  imageone: image.png
+  imageone: team-kristen.png
   nametwo: Laura Dern
   titletwo: "Ramblin' Rose"
   imagetwo: smile.jpg
@@ -70,28 +84,8 @@ Buildercontent:
   imagethree: worry.jpg
   namefour: Knod Branabee
   titlefour: A fine lad
-  imagefour: >
-    41770538_328595391032316_9133265989511675904_n.jpg
+  imagefour: knoedel.jpg
   namefive: ""
   titlefive: ""
   imagefive: ""
   _fieldset: team
-- 
-  contentheading: Extra Content
-  contenttext: |
-    Lorem ipsum **dolor sit amet**, consectetur adipiscing elit. Vivamus sodales ex non *pretium egestas*. Donec ultrices nibh at [eros vestibulum](http://www.google.com), non pharetra quam hendrerit. Fusce rutrum nisl a ex porta sollicitudin. 
-    
-    - Curabitur sed justo leo
-    - Praesent imperdiet semper 
-    - nisi vel maximus. 
-    - ndrerit justo
-    
-    ### Donec nunc mauris
-    
-    <div>Feugiat quis ultricies nec, vulputate a massa. Aliquam ultrices id odio vel efficitur. Aliquam a fermentum risus. Duis dictum arcu non nisi rutrum consectetur. Etiam vitae metus congue, varius tortor sit amet, ultricies ex. In iaculis tortor sapien, eu faucibus quam malesuada quis. </div>> Cras urna ex, interdum id nunc id, facilisis commodo nibh. Nunc est lectus, tristique vitae venenatis id, posuere id elit. Praesent felis ligula, semper sit amet eleifend vitae, congue fringilla tellus. 
-    
-    1. Integer vulputate mollis ligula
-    2. eget congue lacus dictum in
-    3. Cras dolor augue
-    4. bibendum vitae magna sit amet
-  _fieldset: bodyText
