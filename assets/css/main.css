@@ -22588,10 +22588,10 @@ form.cart .btn-wishlist {
   margin: 0 0 30px 20px;
 }
 .hentry .post img.pull-left {
-  padding: 0 15px 30px 0;
+  padding: 0 30px 30px 0;
 }
 .hentry .post img.pull-right {
-  padding: 0 0 30px 15px;;
+  padding: 0 0 30px 30px;
 }
 .hentry .post h3 em,
 .hentry .post h4 em {
@@ -22625,4 +22625,25 @@ form.cart .btn-wishlist {
 }
 .clear-both {
   clear: both;
+}
+
+
+@media (min-width: 768px) {
+  .caption-wrapper.align-left,
+  .caption-wrapper.align-right {
+    padding-bottom: 30px;
+  }
+  .caption-wrapper.align-left {
+    float: left;
+    padding-right: 30px;
+  }
+  .caption-wrapper.align-right {
+    float: right;
+    padding-left: 30px;
+  }
+}
+.caption {
+  padding: 5px 0;
+  text-align: center;
+  font-style: italic;
 }

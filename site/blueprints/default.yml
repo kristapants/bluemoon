@@ -79,7 +79,7 @@ fields:
 
               To center, wrap text in html block: ```<p class="center">My text </p>```
 
-              To create button link use class "btn btn-brand pill" i.e.: ```(link: http://www.link.com text: My Link class: btn btn-brand pill)```
+              To create button link use class "btn btn-brand pill" i.e.: "&#40;link: http://www.link.com text: My Link class: btn btn-brand pill&#41;"
           contentText:
             label: Text Content
             type:  textarea
@@ -98,7 +98,7 @@ fields:
             label: Image Alignment
             type: select
             options:
-              fullWidth: Image full width
+              fullWidth: No Alignment
               imageLeft: Image to left
               imageRight: Image to right
             default: imageLeft
@@ -110,6 +110,9 @@ fields:
               large: Large
               full: Full Size
             default: medium
+          caption:
+            label: Caption
+            type: text
       spacer:
         label: Spacer
         entry: >

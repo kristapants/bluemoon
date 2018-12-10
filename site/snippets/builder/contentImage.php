@@ -2,6 +2,7 @@
   <?php
     $alignment = $data->alignment();
     $size = $data->imageSize();
+    $caption = $data->caption();
     $image = '';
     if ($data->contentImage()->isNotEmpty()) {
       $image = $page->image($data->contentImage());
@@ -19,16 +20,52 @@
       }
     }
     ?>
+  <style>
+    .caption-wrapper.align-left,
+    .caption-wrapper.align-right,
+    img.align-left,
+    img.align-right {
+      max-width: 50%;
+      padding-bottom: 30px;
+    }
+    .caption-wrapper.align-left,
+    img.align-left {
+      float: left;
+      padding-right: 15px;
+    }
+    .caption-wrapper.align-right
+    img.align-right {
+      float: right;
+      padding-left: 15px;
+    }
+    .caption {
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
   <?php if ($image != ''): ?>
-    <img src="<?= $image?>" style="<?php
-      if ($alignment == 'full') {
-        echo '';
-      } else if ($alignment == 'imageLeft') {
-        echo 'float: left; max-width: 50%; padding-right: 15px; padding-bottom: 30px;';
-      } else if ($alignment == 'imageRight') {
-        echo 'float: right; max-width: 50%; padding-left: 15px; padding-bottom: 30px;';
+    <?php if ($caption != '') : ?><div class="caption-wrapper <?php 
+      if ($alignment == 'imageLeft') {
+        echo 'align-left';
+      } else if ($alignment == 'imageRight' ) {
+        echo 'align-right';
+      }
+    ?>"><?php endif; ?>
+    <img src="<?= $image?>" class="<?php
+      if ($caption == '') {
+        if ($alignment == 'imageLeft') {
+          echo 'align-left';
+        } else if ($alignment == 'imageRight' ) {
+          echo 'align-right';
+        }
       }
     ?>"/>
+    <?php 
+    if ($caption != '') { 
+      printf( '<p class="caption">%s</p>', $caption);
+    }
+    ?>
+    <?php if ($caption != '') : ?></div><?php endif; ?>
   <?php endif; ?>
   <?php if ($alignment != 'fullWidth') : ?>
   <p>
