@@ -1,0 +1,21 @@
+title: Blog Post
+
+pages: false
+
+files: true
+
+fields:
+  title:
+    label: Title
+    type: title
+  date:
+    label: Date
+    type: date
+    default: today
+    format: MM/DD/YYYY
+  featuredImage:
+    label: Featured Image
+    type: image
+  text:
+    label: Text
+    type: textarea

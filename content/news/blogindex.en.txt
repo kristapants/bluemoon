@@ -1,0 +1,13 @@
+Headerheadline: 
+
+----
+
+Title: News
+
+----
+
+Subtitle: Farm News
+
+----
+
+Headerimage: blog-header.jpg

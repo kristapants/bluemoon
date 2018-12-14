@@ -7,6 +7,10 @@ fields:
     label: Page Title
     type: text
     width: 3/4
+
+  heroHeadline:
+    type: headline
+    label: Hero Banner Settings
   
   landingTitle:
     label: Landing Image Title
@@ -63,3 +67,21 @@ fields:
     help: High resolution for best results.
     type: image
     help: Second image required for second set of information to display. Leave blank for only one slide!
+
+  blogFeedHeadline:
+    type: headline
+    label: Blog Settings
+  
+  blogFeedHeading:
+    type: text
+    default: Farm News
+
+  blogDefaultImage1:
+    label: Blog feed image default
+    type: image
+    help: Set a default image to use for first post in blog feed.
+
+  blogDefaultImage2:
+    label: Blog feed image 2 default
+    type: image
+    help: Set a default image to use for second post in blog feed.

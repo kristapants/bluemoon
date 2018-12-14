@@ -1,9 +1,20 @@
 <section class="sub-header shop-layout-1">
   <?php
   $imageUrl = '';
-  $headerImage = $page->image( $page->headerImage() );
-  if ( $headerImage !== null ) {
-    $imageUrl = $headerImage->url();
+  if ($page->headerImage()->isNotEmpty()) {
+    $imageUrl = $page->image( $page->headerImage() )->url();
+  } else {
+    // show parent's header on child posts
+    $parent = $page->parent();
+    if ($parent) {
+      $parentPage = $page->parent();
+      if ( $parentPage->headerImage()->isNotEmpty() ) {
+        $imageUrl = $parentPage->image($parentPage->headerImage())->url();
+      }
+    }
+  }
+  if ($imageUrl != '') {
+    $imageUrl = $site->image( $site->headerImage() )->url();
   }
   if ( $imageUrl != '' ) : 
   ?>

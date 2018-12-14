@@ -22,23 +22,17 @@ Buildercontent:
 
 - 
   contenttext: |
-    ### Employment
+    ###Employment
+    It takes many hands to run our diversified operation, and we rely on energetic, motivated assistant managers, field crew members, worker shares, and volunteers to get it all done. We also hire enthusiastic, friendly folks to help us at the Westside Community Market in Madison (Saturdays, May through November).
     
-    It takes many hands to run our diversified operation, and we rely on energetic, motivated assistant managers, field crew members, worker shares, and volunteers to get it all done. We also hire enthusiastic, friendly folks to help us at the Westside Community Market in Madison (Saturdays, May through November).  
-  _fieldset: contentText
-- 
-  contenttext: |
     ### Worker Shares
     Each year we have a group of CSA Worker Share members who work alongside the crew in exchange for a share. If you are interested in getting your hands dirty and can commit to a weekly shift on the farm, please join us!
     
     (file: work-with-us/worker-share-guidelines-2018.pdf text: Worker Share Guidelines and Application class: btn btn-brand pill popup: yes)
     
     We also have Worker Shares who assist with the CSA pick-up on Wednesdays (filled for 2018), help vend at the farmers market (filled for 2018), and "sitter shares" who watch our almost 5-year-old son, Cyrus. Contact Kristen directly about these types of work opportunities.
-  _fieldset: markdownContent
-- 
-  contenttext: |
-    ### Volunteer Work Days
     
+    ### Volunteer Work Days
     During the summer field season (June through mid August), we invite volunteers to join in our morning activities every Thursday from 8am-12pm. You will receive farm vegetables for your morning of work, and get to experience life on the farm crew without making a full-season commitment. If this interests you, email Kristen (<bluemooncommunityfarm@yahoo.com>) to be added to our volunteer list. You'll receive notices and cancellations as necessary, as well as how to prepare for your morning on the farm.
   _fieldset: markdownContent
 - 

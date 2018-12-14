@@ -43,9 +43,9 @@ Buildercontent:
     <p class="center">
     (file: 2018-csa-registration-form.pdf text: Download Registration Form class: btn btn-brand pill popup: yes)
     </p>
+    
+    ****
   _fieldset: markdownContent
-- 
-  _fieldset: horizontalRule
 - 
   contentheading: 'CSA Market Share <em>--Shares Available for 2018!</em>'
   alignment: center

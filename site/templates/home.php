@@ -117,4 +117,6 @@
     </div>
   </section>
 
+  <?php snippet('blogfeed') ?>
+
 <?php snippet('footer') ?>

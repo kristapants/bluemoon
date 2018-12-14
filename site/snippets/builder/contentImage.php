@@ -33,7 +33,7 @@
       float: left;
       padding-right: 15px;
     }
-    .caption-wrapper.align-right
+    .caption-wrapper.align-right,
     img.align-right {
       float: right;
       padding-left: 15px;

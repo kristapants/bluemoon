@@ -59,3 +59,15 @@ Landingbuttonlink2: http://bluemooncommunityfarm.localhost/contact
 ----
 
 Landingimage2: field.jpg
+
+----
+
+Blogfeedheading: Farm News
+
+----
+
+Blogdefaultimage1: example-1.jpg
+
+----
+
+Blogdefaultimage2: example-2.jpg

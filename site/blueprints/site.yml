@@ -40,6 +40,11 @@ fields:
     label: Logo
     type: image
 
+  headerImage:
+    label: Default Header Image
+    type: image
+    help: Select an image to use as the default background of the header section on sub pages. 
+
   headlineFooter:
     label: Footer Settings 
     type: headline
