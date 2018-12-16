@@ -38,6 +38,12 @@
       float: right;
       padding-left: 15px;
     }
+    .caption-wrapper.align-center,
+    img.align-center,
+    .image-wrapper.align-center {
+      margin: auto;
+      text-align: center;
+    }
     .caption {
       text-align: center;
       font-style: italic;
@@ -49,17 +55,23 @@
         echo 'align-left';
       } else if ($alignment == 'imageRight' ) {
         echo 'align-right';
+      } else if ($alignment == 'imageCenter') {
+        echo 'align-center';
       }
     ?>"><?php endif; ?>
+    <?php if ($caption == '' && $alignment == 'imageCenter'): ?><div class="image-wrapper align-center"><?php endif; ?>
     <img src="<?= $image?>" class="<?php
       if ($caption == '') {
         if ($alignment == 'imageLeft') {
           echo 'align-left';
         } else if ($alignment == 'imageRight' ) {
           echo 'align-right';
+        } else if ($alignment == 'imageCenter') {
+          echo 'align-center';
         }
       }
     ?>"/>
+    <?php if ($caption == '' && $alignment == 'imageCenter'): ?></div><?php endif; ?>
     <?php 
     if ($caption != '') { 
       printf( '<p class="caption">%s</p>', $caption);
@@ -67,7 +79,8 @@
     ?>
     <?php if ($caption != '') : ?></div><?php endif; ?>
   <?php endif; ?>
-  <?php if ($alignment != 'fullWidth') : ?>
+  <?php if ($alignment != 'fullWidth' 
+    && $alignment != 'imageCenter') : ?>
   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue lorem, ornare vitae dignissim non, consequat in nisi. Phasellus aliquet massa eget ipsum facilisis fringilla. Morbi posuere convallis libero, vitae varius enim vehicula vel. Donec condimentum aliquet tellus a laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vestibulum arcu euismod porta ornare. Nunc mollis nisl et est aliquam, ut cursus odio bibendum. Aenean eu euismod mi. Curabitur eget enim et ligula iaculis gravida.
   </p>

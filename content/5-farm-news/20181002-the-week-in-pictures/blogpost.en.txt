@@ -1,0 +1,62 @@
+Title: The week in pictures
+
+----
+
+Date: 2018-10-02
+
+----
+
+Featuredimage: oct-1.jpg
+
+----
+
+Text: 
+
+Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+
+Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+
+Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+
+Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.
+
+----
+
+Showfeaturedimage: false
+
+----
+
+Featuredimagecaption: 
+
+----
+
+Buildercontent: 
+
+- 
+  contenttext: |
+    <p class="center">What a range of weather we've had in the last 10 days!</p>
+  _fieldset: markdownContent
+- 
+  contentimage: oct-1.jpg
+  alignment: imageCenter
+  imagesize: medium
+  caption: >
+    We spent several beautiful fall days
+    digging sweet potatoes. They look
+    amazing!
+  linktoimage: 'true'
+  _fieldset: contentImage
+- 
+  contentimage: oct-2.jpg
+  alignment: imageCenter
+  imagesize: medium
+  caption: "Today's conditions for harvesting carrots were less than ideal. Good rain gear is essential!!"
+  linktoimage: 'true'
+  _fieldset: contentImage
+- 
+  contentimage: oct-3.jpg
+  alignment: imageCenter
+  imagesize: medium
+  caption: "It's hard to believe less than 2 weeks ago, Cyrus and I were splashing in Lake Michigan. Brrr..."
+  linktoimage: 'true'
+  _fieldset: contentImage

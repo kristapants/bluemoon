@@ -1,0 +1,66 @@
+Title: Aftermath of the Rain
+
+----
+
+Date: 2018-09-18
+
+----
+
+Featuredimage: rain-1.jpg
+
+----
+
+Text: 
+
+Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
+
+Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jícama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.
+
+Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.
+
+----
+
+Buildercontent: 
+
+- 
+  contenttext: |
+    ### This Week's Farm News Comes from our Farm Manager, Kate:
+    
+    Many CSA members, farm volunteers, and market shoppers have been kindly asking us how we are faring after the downpour a few weeks ago. Thank you for thinking of us! Compared to many other areas and farms, the immediate impact was relatively minimal (we are so grateful!). We were able to harvest most of our winter squash this past week and just started digging sweet potatoes: both look good! Other effects of the rain continue to materialize and this is how the rain affected us.
+    
+    (image: rain-2.jpg link: rain-2.jpg class: pull-left width: 300)
+    
+    Rain slows our daily work. Working in the rain is nothing new, but everything takes longer: vehicles get stuck in the mud, muddy crates need extra cleaning, and salad greens in particular take extra time to wash. The fields become saturated and we are unable to get into the field to mow spent crops, prepare ground for seeding and transplanting, and cultivating (weeding) young crops. It is important to keep tractors out of the field when it’s wet to prevent soil compaction. While we were kept out of the wet fields, we had time to catch up on some other tasks: cleaning onions, hoophouse preparations for fall planting, and hoophouse repairs.
+    
+    With moisture often comes plant disease. Many of the organic approaches to these diseases are preventative measures. Once the pathogens are present, there is often little we can do. It is difficult to do preventative spraying when it rains for a week: it simply washes off. Some crops tolerate disease better than others and will still yield a crop. We are seeing various leaf spots that inhibit growth. Other crops can be totally wiped out. Such was the case for our tomatoes, which took a quick turn for the worse.
+    
+    The farm has very clayey soil. It wicks moisture up quickly, but can also dry out and become hard like concrete, depriving roots of air. When plants become waterlogged, they exhibit similar symptoms to that of drought: wilting leaves, discoloration from stress, and a tendency to go to seed. We’ve been trying to mitigate this stress by breaking the hard clay crust on the surface to allow the roots to breathe. We are irrigating our lettuce and young fall seedlings to keep them happy. The extreme moisture fluctuation can be hard on young plants in particular.
+    A common topic, but one which has become more pertinent after the recent storm, is how farmers can deal with climate change. Some ideas include:
+    
+    (clear:)
+  _fieldset: markdownContent
+- 
+  contentimage: rain-3.jpg
+  alignment: imageRight
+  imagesize: medium
+  caption: "Author Kate can usually be found on a tractor, or in the bean patch where she's known for her speedy picking!"
+  linktoimage: 'true'
+  _fieldset: contentImage
+- 
+  contenttext: |
+    * growing more crops under cover (hoophouses) to exclude extreme weather
+    * building the soil to increase organic matter, which helps with soil
+    moisture regulation in both flood and drought conditions
+    * using reduced tillage and mulches to keep soils from eroding in floods
+    * breeding for heat tolerant varieties.
+    
+    We utilize many of these strategies and will continue to innovate. Being a CSA member means you weather the storm with us. We will have smaller amounts of certain crops from year to year, but careful planning and a diversity of crops ensures there is enough food throughout the season. Your support allows us to keep trying new methods to combat changing growing conditions. Thank you, and happy eating!
+  _fieldset: markdownContent
+
+----
+
+Showfeaturedimage: true
+
+----
+
+Featuredimagecaption: Winter Squash curing in the greenhouse

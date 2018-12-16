@@ -75,13 +75,48 @@ fields:
             type: info
             text: >
               Use markdown to create content. See (link: https://getkirby.com/docs/content/text text:Help Page popup: yes)
+              <script>$( document ).ready(function() { 
+                $('.show-help').on('click', function(e) { 
+                  e.preventDefault();
+                  var el = $(this);
+                  if (el.hasClass('off')) {
+                    el.removeClass('off').addClass('on');
+                    $('.help-info').addClass('show');
+                  } else {
+                    el.removeClass('on').addClass('off');
+                    $('.help-info').removeClass('show');
+                  }
+                });
+              });</script>
 
-
-              To center, wrap text in html block: ```<p class="center">My text </p>```
-
-              To create button link use class "btn btn-brand pill" i.e.: "&#40;link: http://www.link.com text: My Link class: btn btn-brand pill&#41;"
-
-              When linking to a pdf file use "&#40;file: myFileName.pdf ...&#41;" instead of "&#40;link ...&#41;"
+              <a href="#" class="show-help off"><span class="on-label">Hide</span><span class="off-label">Show</span> Cheatsheet</a>
+              <ul class="help-info">
+                <li>image &mdash; &#40;image: myImage.jpg&#41;
+                  <ul> 
+                    <li>link &mdash; &#40;image: myImage.jpg link: myImage.jpg&#41;
+                    <li>caption &mdash; &#40;... caption: My Caption&#41;</li>
+                    <li>width &mdash; &#40;... width: 300&#41;</li>
+                    <li>left align &mdash; &#40;... class: pull-left width: 300&#41;</li>
+                    <li>right align &mdash; &#40;... class: pull-right width: 300&#41;</li>
+                    <li>center cropped &mdash; &#40;cropped: myImage.jpg width:300&#41; **instead of image:**</li>
+                  </ul>
+                </li>
+                <li>centered text &mdash; &lt;p class=&quot;center&quot;&gt;My text &lt;/p&gt;</li>
+                <li>clear alignments i.e. from pull-left or pull-right
+                  <ul>
+                    <li>both &mdash; &#40;clear:&#41; or &mdash; &#40;clear: both&#41;</li>
+                    <li>left &mdash; &#40;clear: left&#41;</li>
+                    <li>right &mdash; &#40;clear: right&#41;</li>
+                  </ul>
+                </li>
+                <li>link automatically &mdash; http://www.link.com</li>
+                <li>link &mdash; &#40;link: http://www.link.com text: My Link &#41;
+                  <ul>
+                    <li>button &mdash; &#40;... class: button&#41;</li>
+                    <li>to pdf &mdash; &#40;file: myFileName.pdf&#41; **instead of link:** </li>
+                  </ul>
+                </li>
+              <ul>
           contentText:
             label: Text Content
             type:  textarea

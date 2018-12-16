@@ -1,0 +1,42 @@
+title: Recipie Index
+
+pages: 
+  template: recipe
+  # sort: title asc
+  num: zero
+
+files: false
+
+fields:
+  headerHeadline:
+    label: Header Settings 
+    type: headline
+
+  title:
+    label: Title
+    type: text
+    required: true
+
+  subtitle:
+    label: Subtitle
+    type: text
+    help: Customize the site's subtitle. Leave blank to use page title.
+
+  headerImage:
+    label: Header Image
+    type: image
+    help: Select an image to customize the background of the header section (and within sub-pages).
+  
+  text:
+    label: Text
+    type: wysiwyg
+    buttons:
+      - h3
+      - h4
+      - h5
+      - bold
+      - italic
+      - anchor
+      - orderedlist 
+      - unorderedlist
+      - removeFormat

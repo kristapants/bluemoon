@@ -245,6 +245,9 @@ td,
 th {
   padding: 0;
 }
+.print-only {
+  display: none !important;
+}
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -315,6 +318,18 @@ th {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important;
+  }
+  .copy-right,
+  .col-second,
+  .col-last,
+  nav,
+  .sub-header,
+  .widget-footer img,
+  .print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
   }
 }
 
@@ -3617,6 +3632,7 @@ select[multiple].input-lg,
   }
 }
 
+.button, 
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -3639,6 +3655,8 @@ select[multiple].input-lg,
   user-select: none;
 }
 
+.button:focus,
+.button:active,
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -7387,20 +7405,29 @@ button.close {
   margin-right: auto;
 }
 
+.align-right,
 .pull-right {
   float: right !important;
 }
 
+.align-left,
 .pull-left {
   float: left !important;
 }
 
 @media (max-width: 767px) {
-  img.pull-right {
+  img.pull-right,
+  img.align-right,
+  figure.pull-right,
+  figure.align-right {
+    padding-left:0 !important;
     float: none !important;
   }
-
-  img.pull-left {
+  img.pull-left,
+  img.align-left,
+  figure.pull-left,
+  figure.align-left {
+    padding-right:0 !important;
     float: none !important;
   }
 }
@@ -17552,14 +17579,18 @@ body.modal-open .mm-slideout {
   color: #fff;
 }
 
+.button,
 .btn {
   font-size: 14px;
   padding: 0 37px;
   transition: all 0.3s ease-in-out;
   line-height: 46px;
+  /* white-space: normal; */
+  max-width: 100%;
 }
 
 @media (max-width: 991px) {
+  .button,
   .btn {
     padding: 0 30px;
     line-height: 36px;
@@ -17567,6 +17598,7 @@ body.modal-open .mm-slideout {
 }
 
 .btn.btn-brand,
+a.button,
 #mc_embed_signup .btn.btn-brand {
   background-color: #97ae76;
   color: #fff;
@@ -17574,6 +17606,7 @@ body.modal-open .mm-slideout {
 }
 
 #mc_embed_signup .btn.btn-brand:hover,
+a.button:hover,
 .btn.btn-brand:hover {
   background-color: #7e975a;
   border-color: #7e975a;
@@ -17603,6 +17636,7 @@ body.modal-open .mm-slideout {
   color: #fff;
 }
 
+a.button,
 .btn.pill {
   border-radius: 25px;
 }
@@ -18446,8 +18480,13 @@ body.modal-open .mm-slideout {
   margin-top: 5px;
 }
 
+.post-control a.prev-post {
+  float: left;
+}
+
 .post-control a.next-post {
   text-align: right;
+  float: right;
 }
 
 .post-control a.next-post i {
@@ -22564,6 +22603,9 @@ form.cart .btn-wishlist {
 .about-page .content-section .blog-v {
   margin-bottom: 0;
 }
+.recipes-page .content-section .blog-v {
+  margin-bottom: 0;
+}
 
 .hentry .blog-v .post {
   margin-top: 15px;
@@ -22587,11 +22629,24 @@ form.cart .btn-wishlist {
 .hentry .post ol {
   margin: 0 0 30px 20px;
 }
-.hentry .post img.pull-left {
-  padding: 0 30px 30px 0;
+.hentry .post img,
+.hentry .post figure {
+  padding-bottom: 30px;
 }
-.hentry .post img.pull-right {
-  padding: 0 0 30px 30px;
+.hentry .post figure img {
+  padding-bottom: 0;
+}
+.hentry .post img.align-left,
+.hentry .post img.pull-left,
+.hentry .post figure.pull-left,
+.hentry .post figure.align-left {
+  padding-right: 30px;
+}
+.hentry .post img.align-right,
+.hentry .post img.pull-right,
+.hentry .post figure.pull-right,
+.hentry .post figure.align-right  {
+  padding-left: 30px;
 }
 .hentry .post h3 em,
 .hentry .post h4 em {
@@ -22610,11 +22665,11 @@ form.cart .btn-wishlist {
   margin-bottom: 30px;
 }
 
-.content-section .post h2,
-.content-section .post h3,
-.content-section .post h4,
-.content-section .post h5,
-.content-section .post h6 {
+.hentry .post h2,
+.hentry .post h3,
+.hentry .post h4,
+.hentry .post h5,
+.hentry .post h6 {
   margin-bottom: 15px;
 }
 .clear-left {
@@ -22627,23 +22682,70 @@ form.cart .btn-wishlist {
   clear: both;
 }
 
-
-@media (min-width: 768px) {
-  .caption-wrapper.align-left,
-  .caption-wrapper.align-right {
-    padding-bottom: 30px;
-  }
-  .caption-wrapper.align-left {
-    float: left;
-    padding-right: 30px;
-  }
-  .caption-wrapper.align-right {
-    float: right;
-    padding-left: 30px;
-  }
-}
+figcaption,
 .caption {
   padding: 5px 0;
   text-align: center;
   font-style: italic;
+}
+figure a img {
+  border: 1px solid #333;
+}
+figure.align-center,
+figure.center {
+  text-align: center;
+}
+.blog-detail .content figure.center img,
+.blog-detail .content figure.align-center img,
+.blog-detail .content figure.text-center img,
+.blog-detail .content figure.text-center figcaption {
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-detail.hentry {
+  padding-bottom: 20px;
+}
+.blog-detail .content figure img {
+  margin: 0;
+}
+.hentry img {
+  max-width: 100%;
+}
+.pagination-spacer {
+  width: 50%;
+}
+.blog-container {
+  max-width: 960px;
+  margin: auto;
+}
+.pagination-container {
+  margin-bottom: 100px;
+}
+h3.heading a,
+h3.heading a:hover {
+  color: #333;
+}
+.recipe-nav {
+  padding: 30px 0 100px 0;
+}
+.recipe-nav .post-control a {
+  width: auto;
+}
+.recipe {
+  position: relative;
+}
+.recipe .print {
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+.print a {
+  font-size: 15px;
+  color: #333;
+}
+.recipes-page {
+  margin-bottom: 0;
+}
+.recipe-index {
+  margin-bottom: 50px;
 }

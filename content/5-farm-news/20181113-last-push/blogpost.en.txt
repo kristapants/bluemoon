@@ -1,0 +1,76 @@
+Title: The Last Push
+
+----
+
+Date: 2018-11-13
+
+----
+
+Featuredimage: 20181113_141623.jpg
+
+----
+
+Text: 
+
+Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+
+Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+
+Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.
+
+----
+
+Buildercontent: 
+
+- 
+  contenttext: |
+    This week the winter cold swept in, something we always hope will happen AFTER the Late Fall Share is complete. Nature doesn't necessarily consult our schedule though, and we spent our week moving, washing, harvesting, protecting and storing all of our remaining crops. The moving occurs because crops such as onions, garlic and squash have resided in our greenhouse since harvest--a rather inefficient space to heat when the temperatures dip. Last week we washed, cleaned and moved all of those crops into more insulated storage in our barn, which we stuffed to the gills! Most of what we stored will be distributed this week, our last CSA share of the season.
+    
+    This morning, we got started prepping CSA vegetables in the barn's warmest place--the cooler 🙂
+  _fieldset: contentText
+- 
+  contentimage: 20181113_092623.jpg
+  alignment: imageCenter
+  imagesize: medium
+  caption: >
+    Bunching turnips in the "warmth" of the
+    cooler
+  _fieldset: contentImage
+  linktoimage: 'true'
+- 
+  contenttext: "We wash everything we are storing because despite the fact that we've been doing this a long time, our pack shed is not winterized. We set up a makeshift washing station in our greenhouse to wash some things, but whatever we can wash before storage saves us LOTS of time later."
+  _fieldset: contentText
+- 
+  contentimage: 20181113_141623.jpg
+  alignment: imageCenter
+  imagesize: medium
+  caption: >
+    Rachel and Kate washing and spraying
+    veggies in the greenhouse. At least it
+    was sunny!
+  _fieldset: contentImage
+  linktoimage: 'true'
+- 
+  contenttext: "We still have tender late-season greens in our field and hoop house that we needed to protect from the low temperatures in order to harvest this week. We use crop blankets called row covers to hold in heat and protect the plants as much as possible. These crops can and do freeze, but need to be harvested after thawing. That window can be just a couple hours long in weather like this. We weren't sure if they made it through until today, when we pulled back the covers to reveal BEAUTIFUL greens--hooray!"
+  _fieldset: contentText
+- 
+  contentimage: 20181113_145352.jpg
+  alignment: imageCenter
+  imagesize: medium
+  caption: ""
+  _fieldset: contentImage
+  linktoimage: 'true'
+- 
+  contenttext: |
+    The challenges of the season seem to have followed us right to the end! While a bit tedious, we are delighted with the crops we were able to harvest this fall. We hope you enjoyed these bountiful weeks as much as we have!
+    
+    Happy eating!
+  _fieldset: contentText
+
+----
+
+Showfeaturedimage: false
+
+----
+
+Featuredimagecaption: 

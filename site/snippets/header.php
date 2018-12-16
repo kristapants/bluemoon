@@ -53,7 +53,7 @@
               </ul>
             </nav>
             <aside class="right">
-              <div class="widget widget-control-header hidden-lg hidden-md hidden-sm">
+              <div class="widget widget-control-header hidden-lg hidden-md">
                 <a class="navbar-toggle js-offcanvas-has-events" type="button" href="#menu">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>

@@ -36,4 +36,12 @@ $(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
+
+  // unobtrusive JavaScript for "Print This!" links
+  // http://perishablepress.com/press/2009/02/01/unobtrusive-javascript-for-print-this-links/
+  $('.print a').on('click', function(e) {
+    e.preventDefault();
+    window.print();
+  });
+
 });

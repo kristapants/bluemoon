@@ -1,5 +1,5 @@
 <?php
-  $articles = page('news')->children()->visible()->paginate(2);
+  $articles = page('farm-news')->children()->visible()->sortBy('date', 'desc')->limit(2);
 ?>
 <section class="boxed-sm">
   <div class="container">
@@ -10,7 +10,7 @@
           $heading = "Blog Feed";
         }
       ?>
-      <h3 class="heading"><?= $heading ?></h3>
+      <h3 class="heading"><a href="/farm-news/"><?= $heading ?></a></h3>
     </div>
     <div class="row blog-v reverse">
       <?php 
@@ -49,10 +49,17 @@
               <a href="<?= $article->url() ?>"><?= $article->title()->html()?></a>
             </h3>
             <p class="meta">
-              <span class="time"><?= $page->date('F j, Y') ?></span>
+              <span class="time"><?= $article->date('F j, Y') ?></span>
             </p>
-            <p class="sapo"><?= $article->text()->excerpt(300) ?></p>
-            <a class="read-more" href="blog-detail.html">READ MORE
+            <p class="sapo"><?php
+              // echo $article->text()->excerpt(200); 
+              $content = '';
+              foreach($article->builderContent()->toStructure() as $section):
+                $content .= snippet('sections/' . strtolower($section->_fieldset()), array('data' => $section), true);
+              endforeach;
+              echo excerpt( $content, 200 );
+            ?></p>
+            <a class="read-more" href="<?= $article->url() ?>">READ MORE
               <i class="fa fa-long-arrow-right"></i>
             </a>
           </div>

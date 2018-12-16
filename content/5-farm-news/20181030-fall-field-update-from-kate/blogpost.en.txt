@@ -1,0 +1,51 @@
+Title: Fall Field Update from Kate
+
+----
+
+Date: 2018-10-30
+
+----
+
+Featuredimage: fall-greens.jpg
+
+----
+
+Text: 
+
+Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+
+Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.
+
+----
+
+Showfeaturedimage: true
+
+----
+
+Featuredimagecaption: 
+
+----
+
+Buildercontent: 
+
+- 
+  contenttext: |
+    ### Our Farm Manager Kate writes:
+    
+    (image: fall-carrots.jpg class: pull-right width: 300 height: 450)
+    
+    We are beginning to put the fields to rest, but not before the last hurrah of the fall share.  We were able to get many crops through the low temperatures a couple of weeks ago.  When the temperatures begin to drop, we pick the last of tender crops that will die from freezing temperatures and protect the crops that can tolerate frost.  We bring large lengths of row cover, basically a thin plant blanket, out to the fields.  A little extra protection can make all the difference on a night that dips into the 20s.  We are excited that we are still harvesting salad mix and baby mustard greens from the field!
+    
+    To hedge our bets, we also plant fall greens in the hoophouse, which stays much warmer and allows us to have fresh greens late in the season.
+    
+    We continue to harvest the remaining root crops in the field as well.  As the temperatures drop, plants increase the sugar content in their cells, which acts like antifreeze.  (It works the same way as salting icy roads.)  This extra boost in sugars is what makes fall carrot so delicious.
+    
+    In addition to field cleanup (taking down trellises, removing plastic mulch, rolling up irrigation hoses), one of our last big jobs each fall is planting garlic.  With extra hands, we were able to get next years crop in the ground last Thursday.
+    
+    (clear:)
+    (image: fall-rows.jpg)
+    
+    We will tuck the garlic in for winter with a thick layer of straw mulch in the coming weeks.  It feels good to start planning for next year and to put this challenging season behind us.
+    
+    _Kate_
+  _fieldset: markdownContent

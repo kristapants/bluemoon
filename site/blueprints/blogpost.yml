@@ -8,14 +8,141 @@ fields:
   title:
     label: Title
     type: title
+
   date:
     label: Date
     type: date
     default: today
     format: MM/DD/YYYY
+
   featuredImage:
     label: Featured Image
     type: image
-  text:
-    label: Text
-    type: textarea
+    width: 2/3
+
+  showFeaturedImage:
+    label: Show Featured Image
+    type: toggle
+    default: yes
+    width: 1/3
+
+  featuredImageCaption:
+    label: Featured Image Caption
+    type: text
+  
+  contentHeadline:
+    label: Content 
+    type: headline
+
+  builderContent:
+    label: Content Sections
+    type: builder
+    fieldsets: 
+      contentText: 
+        label: Body Text
+        snippet: builder/contentText
+        fields:
+          contentText:
+            label: Text Content
+            type:  wysiwyg
+            required: true
+            help: Enter text content for the section
+            buttons:
+              &mdash; h3
+              &mdash; h4
+              &mdash; h5
+              &mdash; bold
+              &mdash; italic
+              &mdash; anchor
+              &mdash; orderedlist 
+              &mdash; unorderedlist
+              &mdash; removeFormat
+      markdownContent: 
+        label: Markdown Content
+        snippet: builder/markdownText
+        fields:
+          contentInfo:
+            label: Markdown Text
+            type: info
+            text: >
+              Use markdown to create content. See (link: https://getkirby.com/docs/content/text text:Help Page popup: yes)
+              <script>$( document ).ready(function() { 
+                $('.show-help').on('click', function(e) { 
+                  e.preventDefault();
+                  var el = $(this);
+                  if (el.hasClass('off')) {
+                    el.removeClass('off').addClass('on');
+                    $('.help-info').addClass('show');
+                  } else {
+                    el.removeClass('on').addClass('off');
+                    $('.help-info').removeClass('show');
+                  }
+                });
+              });</script>
+
+              <a href="#" class="show-help off"><span class="on-label">Hide</span><span class="off-label">Show</span> Cheatsheet</a>
+              <ul class="help-info">
+                <li>image &mdash; &#40;image: myImage.jpg&#41;
+                  <ul> 
+                    <li>link &mdash; &#40;image: myImage.jpg link: myImage.jpg&#41;
+                    <li>caption &mdash; &#40;... caption: My Caption&#41;</li>
+                    <li>width &mdash; &#40;... width: 300&#41;</li>
+                    <li>left align &mdash; &#40;... class: pull-left width: 300&#41;</li>
+                    <li>right align &mdash; &#40;... class: pull-right width: 300&#41;</li>
+                    <li>center cropped &mdash; &#40;cropped: myImage.jpg width:300&#41; **instead of image:**</li>
+                  </ul>
+                </li>
+                <li>centered text &mdash; &lt;p class=&quot;center&quot;&gt;My text &lt;/p&gt;</li>
+                <li>clear alignments i.e. from pull-left or pull-right
+                  <ul>
+                    <li>both &mdash; &#40;clear:&#41; or &mdash; &#40;clear: both&#41;</li>
+                    <li>left &mdash; &#40;clear: left&#41;</li>
+                    <li>right &mdash; &#40;clear: right&#41;</li>
+                  </ul>
+                </li>
+                <li>link automatically &mdash; http://www.link.com</li>
+                <li>link &mdash; &#40;link: http://www.link.com text: My Link &#41;
+                  <ul>
+                    <li>button &mdash; &#40;... class: button&#41;</li>
+                    <li>to pdf &mdash; &#40;file: myFileName.pdf&#41; **instead of link:** </li>
+                  </ul>
+                </li>
+              <ul>
+          contentText:
+            label: Text Content
+            type:  textarea
+            required: true
+            help: Enter text content for the section
+      contentImage:
+        label: Image
+        snippet: builder/contentImage
+        fields:
+          contentImage: 
+            label: Image
+            type: image
+            help: Select an image in the content section
+            required: true
+          alignment:
+            label: Image Alignment
+            type: select
+            options:
+              fullWidth: No alignment
+              imageLeft: Image to left
+              imageRight: Image to right
+              imageCenter: Image centered
+            default: imageLeft
+          imageSize:
+            label: Image Size
+            type: select
+            options:
+              medium: Medium
+              large: Large
+              full: Full Size
+            default: medium
+          caption:
+            label: Caption
+            type: text
+          linkToImage:
+            label: Link to Full Size Image
+            type: toggle
+            default: yes

@@ -9,3 +9,35 @@ h4 em {
   color: #97ae76;
   font-style: normal;
 } 
+
+/* @media (min-width: 1200px) {
+  .cols {
+    column-count: 2;
+  }
+} */
+
+.show-help.on .on-label,
+.show-help.off .off-label {
+  display: inline;
+}
+.show-help .on-label,
+.show-help .off-label {
+  display: none;
+} 
+.help-info {
+  display: none;
+}
+.help-info.show {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  figure.pull-left {
+    float: left;
+    padding-right: 30px;
+  }
+  figure.pull-right {
+    float: right;
+    padding-left: 30px;
+  }
+}

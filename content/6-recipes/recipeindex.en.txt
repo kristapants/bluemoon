@@ -1,0 +1,21 @@
+Headerheadline: 
+
+----
+
+Title: Recipes
+
+----
+
+Subtitle: 
+
+----
+
+Headerimage: 
+
+----
+
+Text: 
+
+### Browse Recipes
+
+All of our recipes are listed below alphabetically by veggie name. Click on a veggie to expand and view its recipes. Click on a recipe to view and print it. We are working in improving the formatting of the recipes--check back soon!
