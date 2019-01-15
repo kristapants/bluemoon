@@ -331,6 +331,52 @@ th {
   .print-only {
     display: block !important;
   }
+  .social-callout { 
+    display: none !important;
+  }
+  .footer-style-1-inner .col-medium {
+    width: 100%;
+  }
+  .footer-style-1 .footer-style-1-inner {
+    padding: 15px 0 !important;
+  }
+  .widget-footer > a {
+    display: none;
+  }
+  .widget-footer .widget-link {
+    display: table;   /* Allow the centering to work */
+	  margin: 0 auto;
+  }
+  .widget-footer .widget-link ul {
+    padding-top: 0;
+    min-width: 696px;
+    list-style: none;
+  }
+  .widget-footer .widget-link li { 
+    display: inline;
+    padding-right: 20px;
+  }
+  .widget-footer .widget-link li:last-child { 
+    padding-right: 0;
+  }
+  .widget-link ul li .icon {
+    margin-right: 10px !important;
+  }
+  .blog-v .post .img-wrapper {
+    display: none;
+  }
+  .blog-v .post .desc {
+    width: 100% !important;
+  }
+  .blog-v.reverse [class^=col-]:nth-of-type(even) .post .desc {
+    text-align: left !important;
+  }
+  .banner-slider-2 {
+    display: none !important;
+  }
+  .home-features .container {
+    margin: 0 auto !important;
+  }
 }
 
 @font-face {
@@ -18364,7 +18410,18 @@ a.button,
 }
 
 .post-creative-style-1.left-thumb .img-wrapper {
-  padding-left: 60px;
+  padding-left: 0;
+}
+.post-creative-style-1.right-thumb .img-wrapper {
+  padding-right: 0;
+}
+@media(min-width: 992px) {
+  .post-creative-style-1.left-thumb .img-wrapper {
+    padding-left: 60px;
+  }
+  .post-creative-style-1.right-thumb .img-wrapper {
+    padding-right: 60px;
+  }
 }
 
 .post-creative-style-1.left-thumb .img-wrapper .cate {
@@ -18380,10 +18437,6 @@ a.button,
 
 .post-creative-style-1.left-thumb .desc h3 a:after {
   left: 0;
-}
-
-.post-creative-style-1.right-thumb .img-wrapper {
-  padding-right: 60px;
 }
 
 .post-creative-style-1.right-thumb .img-wrapper .cate {
@@ -18566,6 +18619,7 @@ a.button,
 }
 
 .banner-slider-2 p {
+  font-size: 18px !important;
   line-height: 25px;
   margin-bottom: 70px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -20683,13 +20737,16 @@ header .widget-control-header .dropdown-menu {
 }
 
 @media (max-width: 991px) {
+  .section-spacing-home-2 {
+    display: none;
+  }
   .widget-footer.widget-link {
     display: block;
   }
   .widget-footer.widget-link ul li {
     display: inline-block;
     margin-right: 30px;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
   }
 }
 
@@ -22748,4 +22805,92 @@ h3.heading a:hover {
 }
 .recipe-index {
   margin-bottom: 50px;
+}
+
+.call-to-action-style-1 p.sapo-video {
+  font-style: normal;
+}
+.home-features .container {
+  margin: 100px auto 0 auto;
+}
+.home-features a.btn {
+  text-transform: uppercase;
+}
+.home-features .desc {
+  margin-bottom: 50px;
+}
+
+.call-to-action-style-3 h3.heading {
+  color: #FFF;
+  margin-top: 0;
+}
+.call-to-action-style-3 p {
+  margin-bottom: 20px;
+}
+.is-single .tparrows {
+  display: none;
+}
+.paypal-wrapper {
+  text-align: center
+}
+.paypal-wrapper form {
+  margin: auto;
+  display: block;
+  width: 315px;
+  margin: auto;
+  text-align: left
+}
+.paypal-wrapper select {
+  margin-top: 5px;
+}
+.paypal-wrapper input[type="image"] {
+  margin-top: 15px;
+}
+.paypal-wrapper h4 {
+  text-align: left;
+}
+
+.call-to-action-style-3,
+.counter-wrapper {
+  background-position: center center;
+  background-size: cover;
+}
+.call-to-action-style-3 .container,
+.counter-wrapper .container {
+  position: relative;
+  z-index: 1;
+}
+.call-to-action-style-3 img.bg-overlay,
+.counter-wrapper img.bg-overlay {
+  display: none;
+}
+.call-to-action-style-3 .overlay-call-to-action,
+.counter-wrapper .overlay-counter {
+  z-index: 0;
+}
+.counter-wrapper .overlay-counter {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-carousel .carousel-arrow.next {
+  transform: translate(0, -50%);
+  opacity: 1;
+}
+.about-carousel .carousel-arrow.prev {
+  transform: translate(0, -50%);
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .tparrows {
+    display: none !important;
+  }
+}
+.hide-mobile {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hide-mobile {
+    display: block;
+  }
 }

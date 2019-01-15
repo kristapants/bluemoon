@@ -42,23 +42,23 @@ Landingimage: tomatoes.jpg
 
 ----
 
-Landingtitle2: Blue Moon <br>Community Farm<br><br>
+Landingtitle2: Welcome!
 
 ----
 
-Landingbody2: Sign up for you share of fresh, high-quality, organic vegetables before space runs out!
+Landingbody2: 2019 CSA Registration is now OPEN!  Shares are limited, register today!
 
 ----
 
-Landingbuttontext2: Email here!
+Landingbuttontext2: Learn More
 
 ----
 
-Landingbuttonlink2: http://bluemooncommunityfarm.localhost/contact
+Landingbuttonlink2: http://www.bluemooncommunityfarm.com/our-csa
 
 ----
 
-Landingimage2: field.jpg
+Landingimage2: video-background-image.jpg
 
 ----
 
@@ -71,3 +71,83 @@ Blogdefaultimage1: example-1.jpg
 ----
 
 Blogdefaultimage2: example-2.jpg
+
+----
+
+Videoheadline: Learn about the Fairshare CSA Coalition
+
+----
+
+Videobackgroundimage: video-background-image.jpg
+
+----
+
+Videourl: https://www.youtube.com/embed/A0mJZjJA5Yk
+
+----
+
+Videopreviewimage: fairshare.png
+
+----
+
+Videoheading: Learn about the FairShare CSA Coalition
+
+----
+
+Contentheading1: Welcome to the Blue Moon Community Farm
+
+----
+
+Contenttext1: 
+
+We are small, diverse CSA and market farm in Stoughton, WI, raising high-quality organic vegetables and pastured meats since 2004.  We love growing beautiful, healthy food for our friends and neighbors.  Join us for the very best in local, seasonal eating!
+
+(link: /work-with-us text: Work With Us class: button)
+
+----
+
+Contentimage1: space-1.jpg
+
+----
+
+Contentlink1: http://www.bluemooncommunityfarm.com/about-us
+
+----
+
+Contentlinktext1: See More
+
+----
+
+Contentheading2: At the Market
+
+----
+
+Contenttext2: We are at the Westside Community Market every Saturday from 7am-12:30pm April through November.  See you in the Spring!
+
+----
+
+Contentimage2: space-2.jpg
+
+----
+
+Contentlink2: http://www.bluemooncommunityfarm.com/where-to-find-us
+
+----
+
+Contentlinktext2: See More
+
+----
+
+Calloutbackgroundimage: field.jpg
+
+----
+
+Calloutheading: Work with us
+
+----
+
+Calloutcontent: 
+
+Each year we have a group of CSA Worker Share members who work alongside the crew in exchange for a share.  If you are interested in getting your hands dirty and can commit to a weekly shift on the farm, please join us!  2019 Worker Share application coming in January.
+
+(link: /work-with-us text: Work With Us class:button)

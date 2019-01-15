@@ -60,7 +60,7 @@ fields:
             type: text
             required: true
           alignment:
-            label: Alignement
+            label: Alignment
             type: select
             default: default
             options: 

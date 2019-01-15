@@ -43,8 +43,8 @@ $(function() {
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: '<div class="carousel-arrow prev"><span class="lnr lnr-chevron-left"></span></div>',
-    prevArrow: '<div class="carousel-arrow next"><span class="lnr lnr-chevron-right"></span></div>',
+    nextArrow: '<div class="carousel-arrow next"><span class="lnr lnr-chevron-right"></span></div>',
+    prevArrow: '<div class="carousel-arrow prev"><span class="lnr lnr-chevron-left"></span></div>',
     responsive: [
       {
         breakpoint: 1024,

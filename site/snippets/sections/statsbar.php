@@ -13,10 +13,13 @@
     || $statTitleFour != '' ) :
 ?>
 <section class="stats-bar-section">
-  <div class="counter-wrapper">
-    <?php if ( $data->backgroundImage()->isNotEmpty() ): ?>
-      <img class="rellax bg-overlay" src="<?= $page->image($data->backgroundImage())->url() ?>" alt="" />
-    <?php endif; ?>
+  <?php
+    $img = $data->backgroundImage()->isNotEmpty()
+      ? $page->image($data->backgroundImage())->url()
+      : '';
+  ?>
+  <div class="counter-wrapper"<?php if ( $img != '' ) { printf( ' style="background-image: url(%s);"', $img ); } ?>>
+    <?php if ( $img != '' ): ?><img class="rellax bg-overlay" src="<?= $img ?>" alt="" /><?php endif; ?>
     <div class="overlay-counter"></div>
     <div class="container">
       <div class="row">

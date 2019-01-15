@@ -19,7 +19,7 @@ fields:
 
   landingBody:
     label: Landing Image Body
-    type:  textarea
+    type: textarea
 
   landingButtonText:
     label: Landing Page Button Label
@@ -48,7 +48,7 @@ fields:
     
   landingBody2:
     label: Second Landing Image Body
-    type:  textarea
+    type: textarea
 
   landingButtonText2:
     label: Second Landing Page Button Label
@@ -67,6 +67,90 @@ fields:
     help: High resolution for best results.
     type: image
     help: Second image required for second set of information to display. Leave blank for only one slide!
+
+  featuredContentHeadline:
+    type: headline
+    label: Featured Content Settings
+
+  contentHeading1:
+    type: text
+    label: Content Heading 1
+
+  contentText1:
+    type: textarea
+    label: Content Text 1
+
+  contentImage1:
+    type: image
+    label: Content Image 1
+
+  contentLink1:
+    type: URL
+    label: Content Link 1
+
+  contentLinkText1:
+    type: text
+    label: Content Link 1 Text
+
+  content-line:
+    type: line
+
+  contentHeading2:  
+    type: text
+    label: Content Heading 2
+
+  contentText2:
+    type: textarea
+    label: Content Text 2
+
+  contentImage2:
+    type: image
+    label: Content Image 2
+
+  contentLink2:
+    type: URL
+    label: Content Link 2
+
+  contentLinkText2:
+    type: text
+    label: Content Link 2 Text
+
+  calloutHeadline:
+    type: headline
+    label: Callout Settings
+    
+  calloutBackgroundImage:
+    type: image
+    label: Callout Background Image
+
+  calloutHeading:
+    type: text
+    label: Callout Heading
+
+  calloutContent:
+    type: textarea
+    label: Callout Content
+
+  # videoHeadline:
+  #   type: headline
+  #   label: Video Callout Settings
+
+  # videoBackgroundImage:
+  #   type: image
+  #   label: Video Background Image
+
+  # videoPreviewImage:
+  #   type: image
+  #   label: Video Preview Image
+  
+  # videoHeading:
+  #   type: text
+  #   label: Video Headline
+
+  # videoUrl:
+  #   type: text
+  #   label: Video Embed Url
+  #   help: Enter youtube embed url to include a video callout
 
   blogFeedHeadline:
     type: headline

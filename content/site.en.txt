@@ -86,3 +86,11 @@ Awardassociationimages:
 ----
 
 Headerimage: tomatoes.jpg
+
+----
+
+Mailchimpformaction: https://bluemooncommunityfarm.us4.list-manage.com/subscribe/post?u=daf5c49ef133df9d71ae4da81&amp;id=acf211c2a4
+
+----
+
+Newsletterformheading: Stay Connected!

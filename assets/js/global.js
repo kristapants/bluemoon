@@ -1,17 +1,17 @@
 'use strict';
 $(function() {
   // search form
-  $('.js-open-search-form-header').on('click', function() {
-    $(this).siblings('.form-outer').addClass('open');
-  });
+  // $('.js-open-search-form-header').on('click', function() {
+  //   $(this).siblings('.form-outer').addClass('open');
+  // });
 
-  $('.js-close-search-form-header').on('click', function() {
-    $(this).parent().removeClass('open');
-  });  
+  // $('.js-close-search-form-header').on('click', function() {
+  //   $(this).parent().removeClass('open');
+  // });  
 
   // Popover &  Tooltip
-  $("[data-toggle=popover]").popover({html:true});
-  $('[data-toggle="tooltip"]').tooltip();
+  // $("[data-toggle=popover]").popover({html:true});
+  // $('[data-toggle="tooltip"]').tooltip();
 
   //Page Load
   $(".animsition").animsition({

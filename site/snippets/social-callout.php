@@ -11,7 +11,8 @@
   //   }
   // }
   $template = $page->template();
-  if ( $template == 'about' ) {
+  if ( $template == 'about' 
+    || $template == 'home') {
     $showCallout = true;
   }
   if( $showCallout ): 

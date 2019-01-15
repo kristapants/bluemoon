@@ -55,7 +55,7 @@ Buildercontent:
     (clear:)
     
     <p class="center">
-    (file: 2018-bm-market-share.pdf text: Download CSA Market Share Brochure and Registration Form class: btn btn-brand pill popup: yes)
+    (file: 2018-bm-market-share.pdf text: Download Brochure/ Registration Form class: btn btn-brand pill popup: yes)
     </p>
     <p class="center">
     Curious what vegetables you might see at our market stand? (file: 2018-bm-market-offerings.pdf text: View Market Offerings by Session!)

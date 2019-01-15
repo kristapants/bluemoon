@@ -101,6 +101,27 @@ fields:
               imageRight: Image to right
             default: imageLeft
             help: Control the orientation of the image & content
+      videoCallout: 
+        label: Video Callout
+        snippet: builder/videoCallout
+        fields:
+          videoBackgroundImage:
+            type: image
+            label: Background Image
+            required: true
+          videoUrl:
+            type: text
+            label: Video Embed Url
+            help: Enter YouTube embed url i.e. https://www.youtube.com/embed/A0mJZjJA5Yk
+            required: true
+          videoPreviewImage:
+            type: image
+            label: Preview Image
+            help: Video Banner Image (placeholder until play is clicked)
+            required: true
+          videoHeading:
+            type: text
+            label: Headline
       statsBar: 
         label: Stats Bar
         snippet: builder/statsBar 

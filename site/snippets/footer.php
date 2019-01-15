@@ -52,13 +52,16 @@
             </div>
           </div>
           <div class="widget-footer widget-newsletter-footer col-last col-small">
-            <h4 class="h4 heading">Newsletter</h4>
-            <p>Sign up for our mailing list below.</p>
-            
+            <h4 class="h4 heading"><?= $site->newsletterFormHeading()?></h4>
+            <?php /* <p>Sign up for our mailing list below.</p> */ ?>
+            <?php
+              $formAction = $site->mailchimpFormAction();
+              if ( $formAction != '' ) :
+            ?>
             <!-- Begin MailChimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
             <div id="mc_embed_signup">
-              <form action="https://bluemooncommunityfarm.us4.list-manage.com/subscribe/post?u=daf5c49ef133df9d71ae4da81&amp;id=68526203f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate Orchid-form form-inline btn-add-on circle border" target="_blank" novalidate>
+              <form action="<?= $formAction ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate Orchid-form form-inline btn-add-on circle border" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
                   <div class="mc-field-group form-group">
                     <input type="email" placeholder="Your Email..." value="" name="EMAIL" class="form-control pill transparent required email" id="mce-EMAIL">
@@ -75,6 +78,7 @@
               </form>
             </div>
             <!--End mc_embed_signup-->
+            <?php endif; ?>
 
             <?php 
               $facebook = $site->facebook();
@@ -142,38 +146,6 @@
       </div>
     </div>
   </footer>
-  <?= js(array(
-    'assets/js/library/jquery.min.js',
-    'assets/js/library/bootstrap.min.js',
-    'assets/js/function-check-viewport.js',
-    'assets/revolution/js/jquery.themepunch.tools.min.js',
-    'assets/revolution/js/jquery.themepunch.revolution.min.js',
-    'assets/revolution/js/extensions/revolution.extension.carousel.min.js',
-    'assets/revolution/js/extensions/revolution.extension.kenburn.min.js',
-    'assets/revolution/js/extensions/revolution.extension.layeranimation.min.js',
-    'assets/revolution/js/extensions/revolution.extension.migration.min.js',
-    'assets/revolution/js/extensions/revolution.extension.navigation.min.js',
-    'assets/revolution/js/extensions/revolution.extension.parallax.min.js',
-    'assets/revolution/js/extensions/revolution.extension.actions.min.js',
-    'assets/revolution/js/extensions/revolution.extension.slideanims.min.js',
-    'assets/revolution/js/extensions/revolution.extension.video.min.js',
-    'assets/js/library/slick.min.js',
-    'assets/js/library/select2.full.min.js',
-    'assets/js/library/imagesloaded.pkgd.min.js',
-    'assets/js/library/jquery.mmenu.all.min.js',
-    'assets/js/library/rellax.min.js',
-    'assets/js/library/isotope.pkgd.min.js',
-    'assets/js/library/bootstrap-notify.min.js',
-    'assets/js/library/bootstrap-slider.js',
-    'assets/js/library/in-view.min.js',
-    'assets/js/library/countUp.js',
-    'assets/js/library/animsition.min.js',
-    'assets/js/global.js',
-    'assets/js/config-mm-menu.js',
-    'assets/js/config-set-bg-blog-thumb.js',
-    'assets/js/config-inview-counter-up.js',
-    'assets/js/config-carousel.js',
-    'assets/js/config-banner-slider-2.js',
-  )) ?>
+  <?php snippet('footer-scripts'); ?>
 </body>
 </html>

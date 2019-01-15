@@ -2,7 +2,7 @@
 	$form = sendform(
 		'contact-form-outreach',
 		$site->email(),
-		$site->title()->html() . ' - message from the contact form'
+		'Blue Moon Contact Form Submission'
 	);
 ?>
 
@@ -53,10 +53,11 @@
           </div>
       </div>
       
+      <?php /*
       <div class="container">
         <div class="row form-contact">
           <div class="row main">
-            <form action="<?php echo $page->url()?>#form" method="post">
+            <form action="<?php echo $page->url()?>#submitted" method="post" id="contact-form-outreach">
               
             <div class="col-md-12">
                 
@@ -69,7 +70,7 @@
               <div class="col-md-6">
                 <div class="form-group organic-form xs-radius"> 
                   <label for="name" class="required">Name*</label>
-                  <input class="form-control"  name="message" id="message" required value="<?php $form->echo_value('message') ?>"/>
+                  <input class="form-control"  name="name" id="name" required value="<?php $form->echo_value('name') ?>"/>
                 </div>
               </div>
               
@@ -90,28 +91,27 @@
               <label class="sendform__potty" for="potty">Please leave this field blank</label>
               <input type="text" name="_potty" id="potty" class="sendform__potty" />
               
-              <a name="form"></a>
-              <?php if ($form->has_message()): ?>
-                <div class="message <?php e($form->successful(), 'success' , 'error')?>">
-                  <?php $form->echo_message() ?>
-                </div>
-              <?php endif; ?>  
-
               <div class="col-md-12">
                 <div class="form-group organic-form xs-radius">
                   <button class="btn btn-brand pill" type="submit" name="_submit" value="<?php echo $form->token() ?>"<?php e($form->successful(), " disabled")?>>SEND EMAIL</button>
                 </div>
               </div>
 
+              <a name="submitted"></a>
+              <?php if ($form->has_message()): ?>
+                <div class="col-md-12 text-center">
+                  <div class="message <?php e($form->successful(), 'success' , 'error') ?>">
+                    <p><strong><?php $form->echo_message() ?></strong></p>
+                  </div>
+              </div>
+              <?php endif; ?>  
+
             </form>
           </div>
         </div>
-      </div>
+      </div> */?>
     </section>
         
   </div>
 
 <?php snippet('footer') ?>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP8qRAW6_o-4pvDo57TllV7EYhffQ0vbk&callback=initMap"
-  type="text/javascript"></script>

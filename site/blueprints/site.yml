@@ -53,29 +53,20 @@ fields:
     label: Footer Logo
     type: image
 
+  newsletterFormHeading: 
+    label: Newsletter Form Heading
+    type: text
+    default: Stay Connected!
+
+  mailchimpFormAction:
+    label: Mailchimp form action
+    type: text
+    help: Enter the 'action' value in the <form> element in the mailchimp embed code
+
   copyright:
     label: Copyright
-    type:  textarea
+    type: textarea
 
-  facebook:
-    label: Facebook URL
-    type: url
-
-  instagram:
-    label: Instagram URL
-    type: url
-
-  calloutImages:
-    label: Callout Background Images
-    help: Add background images for the footer callout section
-    type: structure
-    style: table
-    fields:
-      image:
-        label: Image
-        type: image
-        required: true
-  
   awardAssociationImages:
     label: Award & Association Images
     type: structure
@@ -98,3 +89,26 @@ fields:
         label: Hide In Moble
         type: toggle
         default: false
+
+  headlineSocial:
+    label: Social Settings 
+    type: headline
+
+  facebook:
+    label: Facebook URL
+    type: url
+
+  instagram:
+    label: Instagram URL
+    type: url
+
+  calloutImages:
+    label: Callout Background Images
+    help: Add background images (475px x 270px) for the footer callout section.
+    type: structure
+    style: table
+    fields:
+      image:
+        label: Image
+        type: image
+        required: true
