@@ -62,6 +62,7 @@
                 <?php
                 // fetch all tags
                 $tags = $page->children()->visible()->pluck('tags', ',', true);
+                sort($tags);
                 ?>  
                 <ul class="tags">
                   <?php foreach($tags as $tag): ?>
