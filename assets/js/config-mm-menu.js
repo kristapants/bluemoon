@@ -23,7 +23,7 @@ jQuery(document).ready(function( $ ) {
         {
            "position": "top",
            "content": [
-             '<a href="index.html"><img src="' + logoImg + '" class="img-responsive" alt="Image"></a>'
+             '<a href="/"><img src="' + logoImg + '" class="img-responsive" alt="Image"></a>'
            ]
         },
       //   {
